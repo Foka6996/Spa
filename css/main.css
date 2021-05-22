@@ -869,9 +869,7 @@ body {
 #footer #colum {
     display: flex;
 }
-#footer #colum .text-work {
-    margin-left: 100px;
-}
+
 #footer #colum .number {
     margin-left: 100px;
 }
@@ -881,6 +879,7 @@ body {
     display: flex;
     align-items: center;
     padding: 27px 0 27px 0;
+    justify-content: space-between;
 }
 
 #footer #footer-icon .link {
@@ -907,7 +906,6 @@ body {
     font-size: 16px;
     font-family: "Nunito-Regular", sans-serif;
     color: rgb(44, 5, 38);
-    margin-left: 101px;
 }
 
 #footer .number {

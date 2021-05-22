@@ -391,6 +391,10 @@
     #footer #footer-container {
         padding: 0 20px 20px 20px;
     }
+    #footer #footer-container #colum .number {
+        margin-left: 65px;
+    }
+
 }
 
 /*768-1023*/
@@ -620,7 +624,11 @@
     }
 
     #rituals-spa-description {
-        justify-content: normal;
+        justify-content: center;
+    }
+
+    #present button {
+        padding: 10px 16px;
     }
 
     #rituals-spa .spa {
@@ -869,10 +877,6 @@
     #rituals-spa .rituals-spa-text {
         margin: 0 auto;
         padding-top: 20px;
-    }
-
-    #present button {
-        padding: 10px 16px;
     }
 
     #petal-container #petal-12 img {
