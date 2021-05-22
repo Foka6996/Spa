@@ -1,0 +1,1075 @@
+@font-face {
+    font-family: 'Marguaritas';
+    src: url("../fonts/Marguaritas.ttf");
+}
+
+@font-face {
+    font-family: 'MyriadRegular';
+    src: url("../fonts/MyriadProRegular.otf");
+}
+
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url("../fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Nunito-ExtraBold';
+    src: url("../fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url("../fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Nunito-SemiBold';
+    src: url("../fonts/Nunito-SemiBold.ttf");
+}
+
+body {
+    margin: 0 auto;
+}
+
+#main-header {
+    background: url("../images/14317.png");
+    background-position: center;
+    height: 900px;
+}
+
+#header {
+    background: #e6e3e3;
+    box-shadow: 0 8px 10px 7px #e6e3e3;
+}
+
+#header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0 10px 0;
+    align-items: center;
+}
+#burger {
+    font-size: 30px;
+    color: #2c0526;
+    display: none;
+}
+#links {
+    margin-right: 155px;
+}
+
+#links a {
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Nunito-Semi-Bold", sans-serif;
+    color: rgb(44, 5, 38);
+    margin-right: 60px;
+}
+
+#links a:last-child {
+    margin-right: 0;
+}
+
+#links a.active {
+    font-size: 13px;
+    font-family: "Nunito-Extra-Bold", sans-serif;
+    color: rgb(114, 17, 99);
+    font-weight: bold;
+    border-bottom: 1px solid rgb(114, 17, 99);
+    padding-bottom: 3px;
+}
+
+#links a:hover {
+    border-bottom: 1px solid rgb(114, 17, 99);
+    padding-bottom: 3px;
+}
+
+.logo-head-text {
+    font-size: 55px;
+    font-family: "Marguaritas", sans-serif;
+    color: rgb(67, 6, 57);
+}
+
+.logo .logo-text {
+    font-size: 10px;
+    font-family: "Nunito-SemiBold", sans-serif;
+    text-align: center;
+    color: rgb(67, 6, 57);
+}
+
+.number {
+    font-size: 14px;
+    font-family: "Nunito-SemiBold", sans-serif;
+    color: rgb(44, 5, 38);
+    margin-left: 372px;
+
+}
+
+#title-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#titles {
+    width: 524px;
+    margin-top: 175px;
+}
+
+#title-container #titles h1 {
+    font-size: 36px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: rgb(67, 6, 57);
+    margin: 0 auto;
+}
+
+#title-container #titles h1 span {
+    font-size: 55px;
+    font-family: "Marguaritas", sans-serif;
+    color: rgb(67, 6, 57);
+}
+
+#title-container #titles-text {
+    font-size: 20px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.25;
+    width: 430px;
+    margin-top: 35px;
+}
+
+#action {
+    margin-top: 60px;
+}
+
+#action a {
+    text-decoration: none;
+    padding: 18px 35px 19px 35px;
+}
+
+.btn {
+    background-color: rgb(114, 17, 99);
+    outline: 0;
+    border: 0;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: "Nunito-SemiBold", sans-serif;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#info {
+    position: relative;
+    padding-bottom: 114px;
+}
+
+#info #petal-1 {
+    position: absolute;
+    top: -20px;
+    left: 53px;
+}
+
+#info #petal-2 {
+    position: absolute;
+    top: 162px;
+    left: 0;
+}
+
+#info #petal-3 img {
+    position: absolute;
+    top: 665px;
+    left: -85px;
+}
+
+#info #petal-4 img {
+    position: absolute;
+    bottom: 79px;
+    left: 236px;
+}
+
+#info #petal-5 img {
+    position: absolute;
+    top: 60px;
+    right: 423px;
+}
+
+#info #petal-6 img {
+    position: absolute;
+    top: 272px;
+    right: 0;
+}
+
+#info #petal-7 img {
+    position: absolute;
+    top: 599px;
+    right: 226px;
+}
+
+#info #lavanda img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -3;
+}
+
+#info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-info {
+    font-size: 30px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: rgb(67, 6, 57);
+    font-weight: bold;
+    padding-top: 74px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+#information {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+.info-spa {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.info-spa:first-child {
+    margin-left: 0;
+}
+
+.info-spa-text {
+    width: 280px;
+    margin-left: 30px;
+    font-size: 14px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.2;
+}
+
+#rituals-spa .title-info {
+    padding: 0;
+    margin-top: 190px;
+}
+
+#rituals-spa .rituals-spa-text {
+    width: 550px;
+    font-size: 16px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.313;
+    margin-top: 35px;
+    margin-bottom: 75px;
+}
+
+.spa-description {
+    padding: 30px 15px;
+}
+
+#rituals-spa .spa {
+    border-radius: 8px;
+    background-color: rgb(250, 247, 250);
+    width: 282px;
+    box-shadow: 0 2px 16.56px 1.44px rgba(44, 5, 38, 0.1);
+}
+
+#rituals-spa-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#rituals-spa .spa .spa-title {
+    font-size: 16px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#rituals-spa .spa .spa-text {
+    font-size: 14px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    margin-top: 17px;
+    height: 90px;
+}
+
+#rituals-spa .spa .spa-time {
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: "Nunito-SemiBold", sans-serif;
+    color: rgb(114, 17, 99);
+}
+
+#rituals-spa .spa .spa-money {
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#rituals-spa .spa .btn {
+    margin-top: 18px;
+    padding: 12px 24px;
+    margin-left: 11px;
+
+}
+
+#present {
+    background: url("../images/bg.png");
+    background-position: center;
+    height: 558px;
+    position: relative;
+}
+
+#present-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#present #petal-8 img {
+    position: absolute;
+    top: 95px;
+    left: 91px;
+}
+
+#present #petal-9 img {
+    position: absolute;
+    bottom: 56px;
+    left: 0;
+}
+
+#present .title-info {
+    padding: 170px 0 0 0;
+}
+
+#present .present-text {
+    font-size: 18px;
+    font-family: "Nunito-SemiBold", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.167;
+    width: 369px;
+    margin-top: 35px;
+}
+
+#present button {
+    margin-top: 30px;
+    padding: 17px 42px;
+    font-family: "MyriadRegular", sans-serif;
+}
+
+#petal-container {
+    position: relative;
+}
+
+#petal-container #petal-10 img {
+    position: absolute;
+    right: 554px;
+    top: -6px;
+}
+
+#petal-container #petal-11 img {
+    position: absolute;
+    right: 519px;
+    top: 10px;
+}
+
+#petal-container #petal-12 img {
+    position: absolute;
+    right: 282px;
+    top: 180px;
+}
+
+#petal-container #petal-13 img {
+    position: absolute;
+    right: 233px;
+    top: 391px;
+}
+
+#petal-container #petal-14 img {
+    position: absolute;
+    right: 326px;
+    top: 624px;
+}
+
+#petal-container #petal-15 img {
+    position: absolute;
+    right: 146px;
+    top: 681px;
+}
+
+#petal-container #petal-16 img {
+    position: absolute;
+    right: 0;
+    top: 854px;
+}
+
+#petal-container #petal-17 img {
+    position: absolute;
+    right: 546px;
+    top: 1331px;
+}
+
+#petal-container #petal-18 img {
+    position: absolute;
+    left: 210px;
+    top: 1331px;
+}
+
+
+#masters-container {
+    max-width: 1199px;
+    margin: 0 auto;
+}
+
+#masters .title-info {
+    padding: 135px 0 0 0;
+}
+
+#masters .text-info-masters {
+    font-size: 16px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.313;
+    width: 518px;
+    margin-top: 35px;
+}
+
+#the-choice-masters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+    flex-wrap: wrap;
+}
+
+#the-choice-masters .master {
+    position: relative;
+    width: 385px;
+}
+
+#the-choice-masters .master img {
+    border-radius: 10px;
+}
+
+#the-choice-masters .master-content {
+    background: rgba(240, 238, 237, 0.8);
+    width: 226px;
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 17px;
+}
+
+#the-choice-masters .master-content .master-name {
+    font-size: 18px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#the-choice-masters .master-content .master-work {
+    font-size: 14px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    margin-top: 10px;
+}
+
+.slick-prev::before {
+    content: url("../images/prev.png");
+
+}
+
+.slick-next::before {
+    content: url("../images/next.png");
+}
+
+#the-choice-masters .slick-prev {
+    left: 554px;
+    top: 330px;
+    z-index: 99;
+}
+
+#the-choice-masters .slick-next {
+    right: 554px;
+    top: 330px;
+    z-index: 99;
+}
+
+#the-choice-masters .slick-dots li #slick-slide-control00:before {
+    content: '1';
+    font-size: 18px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgba(114, 17, 99, 0.702);
+    line-height: 1.2;
+}
+
+#the-choice-masters .slick-dots li #slick-slide-control01:before {
+    content: '2';
+    font-size: 18px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgba(114, 17, 99, 0.702);
+    line-height: 1.2;
+}
+
+#the-choice-masters .slick-dots li button:nth-child(1) {
+    content: '2';
+}
+
+#the-choice-masters .slick-dots li.slick-active button:before {
+    color: #721163;
+}
+
+#gallery {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#gallery-title {
+    font-size: 30px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: rgb(67, 6, 57);
+    margin-top: 200px;
+}
+
+#gallery-text {
+    font-size: 16px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.313;
+    margin-top: 31px;
+    width: 665px;
+}
+
+#gallery-photo {
+    margin-top: 32px;
+}
+
+#gallery-photo .img-gallery img {
+    border-radius: 10px;
+}
+
+#gallery-photo .img-gallery {
+    transition: all 1s ease-out;
+}
+
+#gallery-photo .img-gallery:hover {
+    transform: scale(1.1);
+    position: relative;
+    z-index: 99999;
+}
+
+#gallery-photo {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 220px;
+}
+
+#gallery-photo .slick-list {
+    height: 330px;
+}
+
+#gallery-photo .slick-track {
+    position: relative;
+    top: 17px;
+}
+
+#gallery-photo .slick-dots li button::before {
+    content: '';
+    border: 1px solid #751767;
+    border-radius: 50%;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+
+#gallery-photo .slick-dots li.slick-active button:before {
+    background: #721163;
+}
+
+#gallery-photo .slick-prev {
+    left: 427px;
+    top: 355px;
+    z-index: 9999;
+}
+
+#gallery-photo .slick-next {
+    right: 427px;
+    top: 355px;
+    z-index: 9999;
+}
+
+#gallery-photo .slick-dots {
+    bottom: -38px;
+}
+
+#question {
+    background: url("../images/bg-question.png");
+    background-position: center;
+    height: 850px;
+    position: relative;
+}
+
+
+#question #petal-19 img {
+    position: absolute;
+    top: 438px;
+    right: 395px;
+}
+
+#question #petal-20 img {
+    position: absolute;
+    top: 144px;
+    left: 151px;
+    z-index: 0;
+}
+
+#question #petal-21 img {
+    position: absolute;
+    top: 513px;
+    left: 62px;
+    z-index: 0;
+}
+
+#question-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#question .title-info {
+    padding-top: 45px;
+    padding-bottom: 0;
+}
+
+.accordion {
+    width: 715px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.accordion .accordion-header {
+    font-size: 18px;
+    font-family: "Nunito-SemiBold", sans-serif;
+    color: rgb(44, 5, 38);
+
+}
+
+.accordion .accordion-item {
+    padding: 30px 30px 0 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: rgb(250, 247, 250);
+    box-shadow: 0px 2px 9.2px 0.8px rgba(67, 6, 57, 0.12);
+}
+
+.accordion .ui-widget-content {
+    font-size: 14px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 16px;
+    margin: 0;
+    border: none;
+    background-color: rgb(250, 247, 250);
+    /*max-width: 557px;*/
+}
+
+.accordion .ui-widget-content span {
+    color: #721163;
+    font-size: 14px;
+    font-family: Nunito-Bold, sans-serif;
+}
+
+
+.accordion .accordion-header {
+    font-size: 18px;
+    font-family: "Nunito-SemiBold", sans-serif;
+    color: rgb(44, 5, 38);
+    padding: 0;
+}
+
+.accordion .accordion-item {
+    border: 1px solid #ddd;
+    margin: 0 0 10px 0;
+}
+
+.accordion .ui-accordion-header {
+    cursor: pointer;
+    background-color: rgb(250, 247, 250);
+    outline: none;
+    padding-bottom: 30px;
+    border: none;
+}
+
+.accordion .ui-accordion-content {
+    padding: 30px 76px 30px 0;
+    border-top: 1px solid #721163;
+}
+
+
+.accordion .ui-accordion-header {
+    position: relative;
+}
+
+.accordion .ui-accordion-header-icon {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 13px;
+    background: url(../images/downArrow.png) 50% 50% no-repeat;
+}
+
+.accordion .ui-accordion-header-active .ui-accordion-header-icon {
+    background-image: url(../images/upArrow.png);
+}
+
+#number-container {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 8px;
+    background-color: rgb(250, 247, 250);
+    box-shadow: 0px 2px 9.2px 0.8px rgba(67, 6, 57, 0.12);
+    width: 465px;
+    margin-left: 11px;
+    margin-top: 49px;
+    padding: 30px 35px;
+    box-sizing: border-box;
+}
+
+#number-container .number-text {
+    font-size: 18px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.167;
+    text-align: center;
+    width: 382px;
+    margin: 0 auto;
+}
+
+#number-container .number-text span {
+    font-family: "Nunito-Bold", sans-serif;
+    color: #721163;
+}
+
+.input {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input input {
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: rgb(114, 17, 99);
+    border-style: solid;
+    background-color: rgb(245, 239, 243);
+    width: 280px;
+    padding: 17px 21px;
+    outline: 0;
+    font-size: 14px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: rgb(114, 17, 99);
+}
+
+::placeholder {
+    font-size: 14px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(114, 17, 99);
+}
+
+#number-container .btn {
+    padding: 16px 82px;
+    margin: auto;
+    display: flex;
+}
+
+#contact-container {
+    position: relative;
+}
+
+#contact-container #petal-22 img {
+    position: absolute;
+    top: -104px;
+    right: 0;
+}
+
+#contact-container #petal-23 img {
+    position: absolute;
+    top: 186px;
+    right: -169px;
+}
+
+#contact-container #petal-24 img {
+    position: absolute;
+    top: 357px;
+    right: -120px;
+    overflow: hidden;
+}
+
+#maps-information {
+    position: absolute;
+    top: 0;
+    left: 405px;
+}
+
+#lavender img {
+    position: absolute;
+    top: 367px;
+    z-index: -1;
+    left: -179px;
+}
+
+#maps #title-maps {
+    font-size: 36px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: rgb(67, 6, 57);
+    margin-top: 108px;
+}
+
+#maps {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#maps .title-location {
+    font-size: 20px;
+    font-family: "Nunito-SemiBold", sans-serif;
+    color: rgb(44, 5, 38);
+    margin-top: 58px;
+    margin-bottom: 15px;
+}
+
+.work {
+    margin-left: 103px;
+    margin-bottom: 213px;
+}
+
+#maps .location p, .work .text-work {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#maps .work .title-location {
+    margin-top: 70px;
+}
+
+#maps .work .last {
+    margin-top: 40px;
+}
+
+#footer {
+    background-color: rgb(250, 247, 250);
+}
+#footer #colum {
+    display: flex;
+}
+#footer #colum .text-work {
+    margin-left: 100px;
+}
+#footer #colum .number {
+    margin-left: 100px;
+}
+#footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 27px 0 27px 0;
+}
+
+#footer #footer-icon .link {
+    text-decoration: none;
+    margin-right: 30px;
+
+}
+
+#footer #footer-icon .link svg {
+    fill: #2c0526;
+    width: 24px;
+    height: 24px;
+}
+
+#footer #footer-icon .link svg:hover {
+    fill: #721163;
+}
+
+#footer .logo {
+    margin-left: 310px;
+}
+
+#footer .text-work {
+    font-size: 16px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    margin-left: 101px;
+}
+
+#footer .number {
+    margin-left: 101px;
+}
+
+.slick-prev:before, .slick-next:before {
+    z-index: 0;
+}
+
+#reservation #reservation-send {
+    display: none;
+}
+
+#reservation-container {
+    position: fixed;
+    display: none;
+    /*display: flex;*/
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #665d62;
+    opacity: 0.902;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#reservation-container #reservation {
+    border-radius: 15px;
+    background-color: rgb(250, 247, 250);
+    position: relative;
+}
+
+#reservation #reservation-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cec9cd;
+    position: absolute;
+    right: -58px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#reservation .reserve-input input, .reserve-input select {
+    border-width: 1px;
+    border-radius: 22px;
+    border-color: rgb(114, 17, 99);
+    border-style: solid;
+    background-color: rgb(250, 247, 250);
+    width: 303px;
+    padding: 17px 21px;
+    font-size: 14px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.5;
+
+}
+#reservation .reserve-input input:focus-visible {
+    outline: none;
+}
+#reservation .reserve-input {
+    margin-top: 25px;
+}
+#reservation .reserve-input:first-child {
+    margin-top: 0;
+}
+#reservation .reserve-input .input-error {
+    display: none;
+    font-size: 14px;
+    font-family: Nunito-Bold, sans-serif;
+    color: #8e0404;
+    margin-left: 14px;
+}
+#reservation-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*display: none;*/
+    padding: 60px 64px;
+}
+.form-control:focus {
+    background-color: rgb(250, 247, 250);
+    border-color: rgb(114, 17, 99);
+    color: rgb(44, 5, 38);
+    font-size: 14px;
+    font-family: "Nunito-Regular", sans-serif;
+    box-shadow: none;
+}
+#reservation #action-popup {
+    margin-top: 60px;
+}
+#reservation #action-popup .btn {
+    margin-top: 0;
+    padding: 16px 57px;
+}
+#reservation #reservation-send {
+    /*display: flex;*/
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#reservation #reservation-send{
+    margin: 135px 130px 195px 130px;
+}
+
+#reservation #reservation-send .reservation-send-title {
+    font-size: 20px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: rgb(114, 17, 99);
+    font-weight: bold;
+}
+#reservation #reservation-send .reservation-send-text {
+    font-size: 18px;
+    font-family: "Nunito-Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.2;
+    margin-top: 27px;
+    width: 294px;
+}
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+#answer {
+    text-align: center;
+  display: none;
+    flex-direction: column;
+    padding: 60px 30px;
+}
+#answer .answer-title {
+    font-size: 20px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: #721163;
+}
+#answer .answer-text {
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: Nunito-Regular, sans-serif;
+    color: #2c0526;
+}
+.input-error-phone {
+    display: none;
+    font-size: 12px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: darkred;
+}
+#links svg  {
+    width: 20px;
+    height: 20px;
+    fill: #721163;
+    display: none;
+}
