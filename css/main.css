@@ -78,15 +78,15 @@ body {
 #links a.active {
     font-size: 13px;
     font-family: "Nunito-Extra-Bold", sans-serif;
-    color: rgb(114, 17, 99);
+    color: #721163;
     font-weight: bold;
-    border-bottom: 2px solid rgb(114, 17, 99);
+    border-bottom: 2px solid #721163;
     padding-bottom: 4px;
 }
 
 #links a:hover {
-    border-bottom: 2px solid rgb(114, 17, 99);
-    padding-bottom: 3px;
+    border-bottom: 2px solid #721163;
+    padding-bottom: 4px;
 }
 
 .logo-head-text {
@@ -932,7 +932,7 @@ body {
 
 #footer #colum {
     display: flex;
-    margin-left: 94px;
+    margin-left: 73px;
 }
 
 #footer #colum .number {
@@ -978,7 +978,7 @@ body {
 }
 
 #footer .logo {
-    margin-left: 310px;
+    margin-left: 291px;
 }
 
 #footer .logo .logo-head-text {

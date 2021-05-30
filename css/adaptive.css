@@ -10,12 +10,14 @@
         height: 880px;
     }
 }
+
 /*1226-1269*/
 @media screen and (max-width: 1269px) {
     #gallery-photo .slick-track .slick-slide, .slick-cloned {
         width: 420px;
     }
 }
+
 /*1200-1225*/
 @media screen and (max-width: 1225px) {
     #question-container {
@@ -58,10 +60,12 @@
         padding-right: 20px;
     }
 
+
     #number-container .number-text {
-        font-size: 15px;
-        width: 318px;
+        font-size: 14px;
+        width: 297px;
     }
+
     #footer-container {
         padding-left: 20px;
         padding-right: 20px;
@@ -75,105 +79,10 @@
         width: 700px;
         height: 400px;
     }
-}
-
-/*768-1023*/
-@media screen and (max-width: 1023px) {
-
-    #information .info-spa-text {
-        margin-left: 20px;
-        width: 206px;
-    }
-
-    #information .info-spa-image {
-        width: 90px;
-    }
-
-    #present {
-        backdrop-filter: blur(3px);
-    }
-
-    #information .info-spa-image img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    #rituals-spa-description {
-        justify-content: center;
-    }
-
-    #present .title-info {
-        font-size: 25px;
-    }
-
-    #present .present-text {
-        font-size: 16px;
-        width: 306px;
-    }
-
-    #question .title-info {
-        padding-top: 101px;
-    }
-
-    #number-container {
-        margin-top: 7px;
-    }
-
-    #question-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #question {
-        height: 1267px;
-        background-size: auto 100%;
-    }
-
-    #maps #title-maps {
-        text-align: center;
-    }
-
-    #footer #footer-container {
-        justify-content: space-between;
-    }
-
-    #footer .text-work {
-        margin-left: 0;
-    }
-
-    #footer .number {
-        margin-left: 0;
-    }
-
-    #gallery-title {
-        text-align: center;
-        margin-bottom: 31px;
-    }
-
-    #gallery-text {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #footer .logo {
-        margin-left: 0;
-    }
-
-    #footer #colum {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-    }
-
-    #footer #colum .number {
-        margin-top: 3px;
-    }
 
 }
 
-/*1163-1199*/
+/*1024-1199*/
 @media screen and (max-width: 1199px) {
     #header-container {
         padding: 10px 20px;
@@ -330,7 +239,10 @@
     }
 
     #footer .logo {
-        margin-left: 265px;
+        margin-left: 250px;
+    }
+    #footer #colum {
+        margin-left: 0;
     }
 }
 
@@ -401,12 +313,114 @@
     }
 
 }
+
+/*981-1023*/
+@media screen and (max-width: 1023px) {
+
+    #present {
+        backdrop-filter: blur(3px);
+    }
+
+    #rituals-spa-description {
+        justify-content: center;
+    }
+
+    #present .title-info {
+        font-size: 25px;
+    }
+
+    #present .present-text {
+        font-size: 16px;
+        width: 306px;
+    }
+
+    #question .title-info {
+        padding-top: 101px;
+    }
+
+    #number-container {
+        margin-top: 7px;
+    }
+
+    #question-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #question {
+        height: 1267px;
+        background-size: auto 100%;
+    }
+
+    #maps #title-maps {
+        text-align: center;
+    }
+
+    #footer #footer-container {
+        justify-content: space-between;
+    }
+
+    #footer .text-work {
+        margin-left: 0;
+    }
+
+    #footer .number {
+        margin-left: 0;
+    }
+
+    #gallery-title {
+        text-align: center;
+        margin-bottom: 31px;
+    }
+
+    #gallery-text {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #footer .logo {
+        margin-left: 0;
+    }
+
+    #footer #colum {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    #footer #colum .number {
+        margin-top: 3px;
+    }
+
+}
+
+
+/*931-980*/
+@media screen and (max-width: 980px) {
+    #information .info-spa-text {
+        margin-left: 20px;
+        width: 206px;
+    }
+
+    #information .info-spa-image {
+        width: 90px;
+    }
+
+    #information .info-spa-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
 /*814-930*/
 @media screen and (max-width: 930px) {
     #rituals-spa .spa {
         margin: 25px 8px;
     }
 }
+
 /*768-813*/
 @media screen and (max-width: 813px) {
     #the-choice-masters .slick-prev {
@@ -562,12 +576,14 @@
 
 
 }
+
 /*630-670*/
 @media screen and (max-width: 670px) {
     #reservation #reservation-send {
         margin: 113px 37px;
     }
 }
+
 /*580-628*/
 @media screen and (max-width: 628px) {
     #footer #colum {
@@ -625,15 +641,6 @@
 
     #rituals-spa .spa {
         margin: 25px 0;
-    }
-
-    #number-container .number-text {
-        font-size: 14px;
-        width: 297px;
-    }
-
-    #question-container #number-container {
-        width: 300px;
     }
 
     #present {
@@ -702,6 +709,10 @@
         font-size: 12px;
     }
 
+    #question-container #number-container {
+        width: 300px;
+    }
+
     #present .title-info {
         font-size: 19px;
         width: 282px;
@@ -730,14 +741,7 @@
         width: 292px;
     }
 
-    #numbers .input input {
-        width: 243px;
-        padding: 17px 17px;
-    }
 
-    #number-container .btn {
-        padding: 16px 65px;
-    }
 
     #number-container {
         margin-left: 0;
@@ -787,8 +791,9 @@
     }
 
     #masters .text-info-masters {
-        width: 312px;
-        font-size: 15px;
+        width: 296px;
+        font-size: 16px;
+        padding-top: 0;
     }
 
     #the-choice-masters .slick-next {
@@ -813,7 +818,7 @@
     }
 
     #information .info-spa-text {
-        margin-left: 5px;
+        margin-left: 10px;
         width: 191px;
         font-size: 13px;
     }
@@ -904,6 +909,7 @@
         margin-top: 23px;
     }
 }
+
 /*320-370*/
 @media screen and (max-width: 370px) {
     #header-container .number {
