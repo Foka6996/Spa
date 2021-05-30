@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>White Lotus</title>
     <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
@@ -19,7 +20,8 @@
         <div id="header-container">
             <div id="burger">&#9776;</div>
             <div id="links" class="wow animate__backInLeft">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 511.76 511.76" style="enable-background:new 0 0 511.76 511.76;" xml:space="preserve">
 <g>
 	<g>
@@ -33,10 +35,12 @@
 	</g>
 </g>
 </svg>
-                <a href="#rituals-spa-description" class="category active">Услуги</a>
-                <a href="#masters" class="category">Мастера</a>
-                <a href="#gallery-photo" class="category">Галерея фото</a>
-                <a href="#question" class="category">FAQ</a>
+                <div class="block-link">
+                    <a href="#rituals-spa-description" class="category active">Услуги</a>
+                    <a href="#masters" class="category">Мастера</a>
+                    <a href="#gallery-photo" class="category">Галерея фото</a>
+                    <a href="#question" class="category">FAQ</a>
+                </div>
             </div>
             <div class="logo wow animate__bounceIn">
                 <div class="logo-head-text">White Lotus</div>
@@ -57,7 +61,7 @@
             с медицинским образованием.
         </div>
         <div id="action">
-            <a href="#rituals-spa-description" class="btn">Заказать SPA-программу</a>
+            <a href="#rituals-spa-description" class="btn">Выбрать SPA-программу</a>
         </div>
     </div>
 </div>
@@ -149,10 +153,12 @@
                         <div class="spa-time">
                             Сеанс: 1 час
                         </div>
-                        <div class="spa-money">
-                            от 3 700 руб.
+                        <div class="spa-action">
+                            <div class="spa-money">
+                                от 3 700 руб.
+                            </div>
+                            <button data-id="stones" class="btn open-modal">Записаться</button>
                         </div>
-                        <button class="btn open-modal">Записаться</button>
                     </div>
                 </div>
                 <div class="spa">
@@ -170,10 +176,12 @@
                         <div class="spa-time">
                             Сеанс: 1 час
                         </div>
-                        <div class="spa-money">
-                            от 3 100 руб.
+                        <div class="spa-action">
+                            <div class="spa-money">
+                                от 3 100 руб.
+                            </div>
+                            <button data-id="balinese" class="btn open-modal">Записаться</button>
                         </div>
-                        <button class="btn open-modal">Записаться</button>
                     </div>
                 </div>
                 <div class="spa">
@@ -193,10 +201,12 @@
                         <div class="spa-time">
                             Сеанс: 1,5 часа
                         </div>
-                        <div class="spa-money">
-                            от 5 700 руб.
+                        <div class="spa-action">
+                            <div class="spa-money">
+                                от 5 700 руб.
+                            </div>
+                            <button data-id="bag" class="btn open-modal">Записаться</button>
                         </div>
-                        <button class="btn open-modal">Записаться</button>
                     </div>
                 </div>
                 <div class="spa">
@@ -214,17 +224,18 @@
                         <div class="spa-time">
                             Сеанс: 1,5 часа
                         </div>
-                        <div class="spa-money">
-                            от 4 800 руб.
+                        <div class="spa-action">
+                            <div class="spa-money">
+                                от 4 800 руб.
+                            </div>
+                            <button data-id="anti-cellulite" class="btn open-modal">Записаться</button>
                         </div>
-                        <button class="btn open-modal">Записаться</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="parallax-window" data-parallax="scroll" data-image-src="images/paralaxBigImage.jpg"></div>
 <div id="present">
     <div id="petal-8">
         <img src="images/petal8.png" alt="">
@@ -237,7 +248,7 @@
         <div class="present-text">
             Сходите на процедуру массажа камнями и мы сделаем вам альгинатную маску!
         </div>
-        <button class="btn open-modal">Записаться на ритуал</button>
+        <button data-id="stones" class="btn open-modal">Записаться на ритуал</button>
     </div>
 </div>
 <div id="masters">
@@ -339,43 +350,44 @@
         Убедитесь, что наши массажные комнаты выглядят так, как вам нравится, чтобы в наших салонах вы смогли
         расслабиться и получить настоящее удовольствие от наших программ.
     </div>
-    <div id="gallery-photo">
-        <div class="img-gallery">
-            <a href="images/gallery1.jpg" class="img"><img src="images/gallery1.jpg" alt=""></a>
-        </div>
-        <div class="img-gallery">
-            <a href="images/gallery2.jpg" class="img"><img src="images/gallery2.jpg" alt=""></a>
-        </div>
-        <div class="img-gallery">
-            <a href="images/gallery3.png" class="img"><img src="images/gallery3.png" alt=""></a>
-        </div>
-        <div class="img-gallery">
-            <a href="images/gallery4.png" class="img"> <img src="images/gallery4.png" alt=""></a>
-        </div>
-        <div class="img-gallery">
-            <a href="images/gallery5.jpg" class="img"><img src="images/gallery5.jpg" alt=""></a>
-        </div>
-        <div class="img-gallery">
-            <a href="images/gallery6.jpg" class="img"> <img src="images/gallery6.jpg" alt=""></a>
-        </div>
-        <div class="img-gallery">
-            <a href="images/gallery7.jpg" class="img"> <img src="images/gallery7.jpg" alt=""></a>
-        </div>
-        <div class="img-gallery">
-            <a href="images/gallery8.jpg" class="img"><img src="images/gallery8.jpg" alt=""></a>
-        </div>
-        <div class="img-gallery">
-            <a href="images/gallery9.png" class="img"> <img src="images/gallery9.png" alt=""></a>
-        </div>
-        <div class="img-gallery">
-            <a href="images/gallery10.jpg" class="img"> <img src="images/gallery10.jpg" alt=""></a>
-        </div>
+</div>
+<div id="gallery-photo">
+    <div class="img-gallery">
+        <a href="images/gallery1.jpg" class="img"><img src="images/gallery1.jpg" alt=""></a>
+    </div>
+    <div class="img-gallery">
+        <a href="images/gallery2.jpg" class="img"><img src="images/gallery2.jpg" alt=""></a>
+    </div>
+    <div class="img-gallery">
+        <a href="images/gallery3.png" class="img"><img src="images/gallery3.png" alt=""></a>
+    </div>
+    <div class="img-gallery">
+        <a href="images/gallery4.png" class="img"> <img src="images/gallery4.png" alt=""></a>
+    </div>
+    <div class="img-gallery">
+        <a href="images/gallery5.jpg" class="img"><img src="images/gallery5.jpg" alt=""></a>
+    </div>
+    <div class="img-gallery">
+        <a href="images/gallery6.jpg" class="img"> <img src="images/gallery6.jpg" alt=""></a>
+    </div>
+    <div class="img-gallery">
+        <a href="images/gallery7.jpg" class="img"> <img src="images/gallery7.jpg" alt=""></a>
+    </div>
+    <div class="img-gallery">
+        <a href="images/gallery8.jpg" class="img"><img src="images/gallery8.jpg" alt=""></a>
+    </div>
+    <div class="img-gallery">
+        <a href="images/gallery9.png" class="img"> <img src="images/gallery9.png" alt=""></a>
+    </div>
+    <div class="img-gallery">
+        <a href="images/gallery10.jpg" class="img"> <img src="images/gallery10.jpg" alt=""></a>
     </div>
 </div>
 <div id="question">
     <div id="petal-19"><img src="images/petal19.png" alt=""></div>
     <div id="petal-20"><img src="images/petal20.png" alt=""></div>
     <div id="petal-21"><img src="images/petal21.png" alt=""></div>
+    <div id="petal-22"><img src="images/petal22.png" alt=""></div>
     <div id="question-container">
         <div class="title-info wow animate__slideInLeft">Часто задаваемые вопросы</div>
         <div class="accordion wow animate__slideInLeft">
@@ -440,40 +452,40 @@
 </div>
 <div id="maps">
     <div id="contact-container">
-        <div id="petal-22"><img src="images/petal22.png" alt=""></div>
+
         <div id="petal-23"><img src="images/petal23.png" alt=""></div>
         <div id="petal-24"><img src="images/petal24.png" alt=""></div>
         <div id="lavender"><img src="images/Lavender.png" alt=""></div>
         <div id="title-maps">
             Контакты
         </div>
-<div id="location-work">
-        <div class="location wow animate__backInRight">
-            <div class="title-location">Адреса наших салонов:</div>
-            <p>Минск, ул. Жасминовая, д. 3B</p>
-            <p>Минск, ул. Кирова, д. 5</p>
-            <p>Минск, ул. Братская, д. 18</p>
-            <p>Минск, ул. Стеклянная, д. 98</p>
-        </div>
-        <div class="work wow animate__backInRight">
-            <div class="title-location">
-                Время работы всех салонов:
+        <div id="location-work">
+            <div class="location wow animate__backInRight">
+                <div class="title-location">Адреса наших салонов:</div>
+                <p>Минск, ул. Жасминовая, д. 3B</p>
+                <p>Минск, ул. Кирова, д. 5</p>
+                <p>Минск, ул. Братская, д. 18</p>
+                <p>Минск, ул. Стеклянная, д. 98</p>
             </div>
-            <div class="text-work">
-                Ежедневно с 9:00 до 22:00
-            </div>
-            <div class="title-location last">
-                Единый номер телефона:
-            </div>
-            <div class="text-work">
-                +7 (981) 458-85-96
-            </div>
+            <div class="work wow animate__backInRight">
+                <div class="title-location">
+                    Время работы всех салонов:
+                </div>
+                <div class="text-work">
+                    Ежедневно с 9:00 до 22:00
+                </div>
+                <div class="title-location last">
+                    Единый номер телефона:
+                </div>
+                <div class="text-work">
+                    +7 (981) 458-85-96
+                </div>
 
+            </div>
         </div>
-</div>
         <div id="maps-information">
             <script type="text/javascript" charset="utf-8" async
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afc73ba0dc9cff9b2881bc2d730f0897f769ebb010bf8458aa2064d4a2d232bf5&amp;width=792&amp;height=420&amp;lang=ru_RU&amp;scroll=true"></script>
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afc73ba0dc9cff9b2881bc2d730f0897f769ebb010bf8458aa2064d4a2d232bf5&amp;width=791&amp;height=420&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
     </div>
 </div>
@@ -484,20 +496,43 @@
                 <a href="https://vkontakte.ru/Spa" class="link" target="_blank">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 511.962 511.962" style="enable-background:new 0 0 511.962 511.962;"
+                         width="800px" height="1000px" viewBox="0 0 532.337 532.337"
+                         style="enable-background:new 0 0 532.337 532.337;"
                          xml:space="preserve">
-<path d="M250.503,400.807h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
-	s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
-	c0,0,35.776-2.208,18.816-30.336c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
-	c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
-	c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
-	c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
-	c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
-	c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
-	c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
-	c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
-	C182.983,404.871,250.503,400.807,250.503,400.807L250.503,400.807z"/>
-                        <g>
+<g>
+	<g>
+		<path d="M471.998,241.286c7.57-9.786,13.58-17.638,18.018-23.562c31.965-42.498,45.82-69.646,41.574-81.482l-1.666-2.772
+			c-1.107-1.665-3.977-3.194-8.592-4.578c-4.621-1.383-10.533-1.604-17.736-0.691l-79.822,0.563
+			c-1.848-0.184-3.697-0.141-5.545,0.128c-1.848,0.281-3.047,0.563-3.605,0.832c-0.557,0.282-1.016,0.508-1.383,0.692l-1.107,0.832
+			c-0.924,0.551-1.939,1.524-3.047,2.914c-1.109,1.389-2.039,2.999-2.773,4.853c-8.684,22.356-18.568,43.146-29.656,62.363
+			c-6.838,11.457-13.123,21.396-18.844,29.792c-5.729,8.415-10.533,14.603-14.414,18.568c-3.879,3.972-7.393,7.166-10.531,9.56
+			c-3.146,2.411-5.545,3.421-7.203,3.054c-1.666-0.367-3.238-0.734-4.713-1.114c-2.588-1.658-4.67-3.917-6.236-6.787
+			c-1.572-2.857-2.631-6.463-3.189-10.808c-0.551-4.339-0.881-8.084-0.967-11.23c-0.098-3.139-0.049-7.57,0.141-13.305
+			c0.184-5.729,0.275-9.602,0.275-11.64c0-7.014,0.141-14.639,0.418-22.864c0.275-8.219,0.508-14.737,0.691-19.542
+			c0.184-4.798,0.275-9.884,0.275-15.245c0-5.349-0.324-9.56-0.975-12.613c-0.648-3.042-1.621-5.998-2.906-8.868
+			c-1.297-2.858-3.189-5.08-5.686-6.646c-2.496-1.573-5.588-2.815-9.283-3.746c-9.799-2.222-22.271-3.409-37.418-3.604
+			c-34.37-0.355-56.451,1.86-66.243,6.658c-3.88,2.038-7.393,4.804-10.532,8.317c-3.329,4.07-3.788,6.291-1.383,6.646
+			c11.089,1.665,18.936,5.643,23.556,11.922l1.665,3.323c1.291,2.411,2.583,6.659,3.88,12.754c1.292,6.096,2.124,12.84,2.497,20.233
+			c0.924,13.488,0.924,25.031,0,34.646c-0.924,9.614-1.799,17.093-2.631,22.442c-0.833,5.361-2.081,9.7-3.74,13.023
+			c-1.665,3.335-2.772,5.367-3.329,6.107c-0.557,0.734-1.016,1.199-1.383,1.384c-2.405,0.918-4.896,1.383-7.484,1.383
+			c-2.589,0-5.729-1.298-9.425-3.887c-3.697-2.576-7.534-6.138-11.5-10.667c-3.978-4.522-8.452-10.856-13.446-18.99
+			c-4.988-8.121-10.166-17.736-15.521-28.819l-4.431-8.042c-2.772-5.165-6.561-12.699-11.365-22.583s-9.058-19.443-12.748-28.69
+			c-1.481-3.874-3.697-6.83-6.652-8.868l-1.383-0.832c-0.924-0.735-2.405-1.524-4.437-2.351c-2.038-0.832-4.155-1.432-6.377-1.805
+			l-75.943,0.551c-7.76,0-13.023,1.763-15.795,5.275l-1.108,1.659C0.275,136.059,0,137.54,0,139.566
+			c0,2.038,0.557,4.529,1.665,7.479c11.089,26.059,23.146,51.188,36.169,75.386c13.03,24.211,24.346,43.709,33.954,58.489
+			c9.608,14.792,19.4,28.733,29.382,41.854c9.982,13.121,16.585,21.523,19.816,25.214c3.231,3.703,5.771,6.476,7.62,8.317
+			l6.928,6.658c4.431,4.432,10.949,9.743,19.542,15.937c8.592,6.193,18.103,12.289,28.55,18.287
+			c10.435,6.01,22.589,10.899,36.444,14.694c13.856,3.794,27.344,5.317,40.465,4.571h31.874c6.469-0.551,11.363-2.576,14.688-6.096
+			l1.107-1.383c0.734-1.102,1.432-2.815,2.08-5.123c0.643-2.307,0.975-4.853,0.975-7.619c-0.191-7.943,0.416-15.116,1.799-21.481
+			c1.383-6.377,2.955-11.175,4.713-14.418c1.756-3.226,3.738-5.955,5.959-8.177c2.217-2.222,3.783-3.55,4.713-4.015
+			c0.924-0.453,1.666-0.777,2.217-0.973c4.43-1.476,9.65-0.043,15.66,4.296c6.004,4.352,11.641,9.7,16.91,16.077
+			c5.262,6.377,11.59,13.531,18.984,21.481c7.387,7.943,13.855,13.855,19.4,17.735l5.545,3.336
+			c3.695,2.209,8.494,4.241,14.412,6.096c5.912,1.842,11.09,2.307,15.52,1.383l70.955-1.114c7.02,0,12.473-1.15,16.354-3.464
+			c3.879-2.295,6.188-4.853,6.928-7.619c0.734-2.772,0.783-5.899,0.141-9.419c-0.648-3.507-1.297-5.955-1.939-7.338
+			c-0.648-1.383-1.25-2.546-1.807-3.464c-9.24-16.628-26.885-37.051-52.938-61.255l-0.557-0.551l-0.275-0.281l-0.275-0.27H473.4
+			c-11.83-11.273-19.309-18.85-22.449-22.736c-5.727-7.38-7.025-14.865-3.879-22.441
+			C449.275,271.874,457.586,259.769,471.998,241.286z"/>
+	</g>
 </g>
 </svg>
                 </a>
@@ -515,9 +550,14 @@
                 </a>
 
                 <a href="https://www.youtube.com/watch?v=k4bssDcZuJE" class="link" target="_blank">
-                    <svg height="682pt" viewBox="-21 -117 682.66672 682" width="682pt"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/>
+                    <svg width="256px" height="180px" viewBox="0 0 256 180" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         preserveAspectRatio="xMidYMid">
+                        <g>
+                            <path d="M250.346231,28.0746923 C247.358133,17.0320558 238.732098,8.40602109 227.689461,5.41792308 C207.823743,0 127.868333,0 127.868333,0 C127.868333,0 47.9129229,0.164179487 28.0472049,5.58210256 C17.0045684,8.57020058 8.37853373,17.1962353 5.39043571,28.2388718 C-0.618533519,63.5374615 -2.94988224,117.322662 5.5546152,151.209308 C8.54271322,162.251944 17.1687479,170.877979 28.2113844,173.866077 C48.0771024,179.284 128.032513,179.284 128.032513,179.284 C128.032513,179.284 207.987923,179.284 227.853641,173.866077 C238.896277,170.877979 247.522312,162.251944 250.51041,151.209308 C256.847738,115.861464 258.801474,62.1091 250.346231,28.0746923 Z"></path>
+                            <polygon fill="#FFFFFF"
+                                     points="102.420513 128.06 168.749025 89.642 102.420513 51.224"></polygon>
+                        </g>
                     </svg>
                 </a>
             </div>
@@ -527,12 +567,12 @@
             <div class="logo-text">Массажный салон</div>
         </div>
         <div id="colum">
-        <div class="text-work">
-            Ежедневно с 9:00 до 22:00
-        </div>
-        <div class="number">
-            +7 (981) 458-85-96
-        </div>
+            <div class="text-work">
+                Ежедневно с 9:00 до 22:00
+            </div>
+            <div class="number">
+                +7 (981) 458-85-96
+            </div>
         </div>
     </div>
 </div>
@@ -541,7 +581,7 @@
 <div id="reservation-container" class="wow animate__pulse">
     <div id="reservation">
         <div id="reservation-cancel">
-            <img src="images/cancel.png" alt="">
+            <img id="cancel" src="images/cancel.png" alt="">
         </div>
         <div id="reservation-content">
             <form action="" id="reserv" method="post">
@@ -554,16 +594,15 @@
                     <p class="input-error">Введите ваш телефон</p>
                 </div>
                 <div class="reserve-input">
-                    <select class="form-control" name="ritual" id="exampleFormControlSelect1 ritual">
-                        <option>Выберите ритуал</option>
-                        <option>Массаж камнями</option>
-                        <option>Балийский массаж</option>
-                        <option>С травяными мешочками</option>
-                        <option>Антицеллюлитный массаж</option>
+                    <select class="form-control ritual" name="ritual" id="exampleFormControlSelect1">
+                        <option value="stones">Массаж камнями</option>
+                        <option value="balinese">Балийский массаж</option>
+                        <option value="bag">С травяными мешочками</option>
+                        <option value="anti-cellulite">Антицеллюлитный массаж</option>
                     </select>
                 </div>
                 <div class="reserve-input">
-                    <input type="text" name="date" placeholder="Введите дату и время" id="date">
+                    <input type="text" name="date" readonly placeholder="Введите дату и время" id="date">
                     <p class="input-error">Введите дату и время</p>
                 </div>
             </form>
@@ -584,10 +623,10 @@
         </div>
     </div>
 </div>
-
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.datetimepicker.full.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/parallax.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>

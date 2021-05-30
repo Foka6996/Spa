@@ -5,14 +5,43 @@ $(document).ready(() => {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 814,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            },
+
+        ]
     });
 // слик слайд фотографий
+
     $('#gallery-photo').slick({
-        dots: true,
+        centerMode: true,
         slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1269,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 2,
+                    variableWidth: true
+                }
+            },
+
+        ]
     });
     //Акордеон
     $('.accordion').accordion({
@@ -36,7 +65,7 @@ $(document).ready(() => {
 // функция при клике на кнопку перезвонить
     $('.open-phone').click(() => {
         let phone = $('#phone');
-        if (phone.val() ) {
+        if (phone.val()) {
             $('#answer').show();
             $('#numbers').hide();
         } else {
@@ -65,12 +94,15 @@ $(document).ready(() => {
 
 // функция на валидацию форм и отправки формы
     // Попап для заказа
-    $('.open-modal').click(() => {
+    $('.open-modal').click((e) => {
+        let id = $(e.target).data('id');
+        $('.ritual').val(id);
+
         $('#reservation-container').css('display', 'flex');
     });
-    $('#reservation-cancel , #reservation-container').click((e) => {
+    $('#reservation-cancel , #reservation-container, #cancel').click((e) => {
         e.target
-        if (e.target.id === 'reservation-container' || e.target.id === 'reservation-cancel')
+        if (e.target.id === 'reservation-container' || e.target.id === 'reservation-cancel' || e.target.id === 'cancel')
             $('#reservation-container').hide();
     });
     $('#action-popup .button').click(() => {
@@ -120,10 +152,10 @@ $(document).ready(() => {
                 $('#reservation-send').show();
                 $('#reservation-content').hide();
             },
-            // error: () => {
-            //    $('#reservation-container').hide();
-            //     alert('Ошибка бронирование. Свяжитесь, пожалуйста, по номеру телефона.');
-            // }
+            error: () => {
+                // $('#reservation-send').show();
+                // $('#reservation-content').hide();
+            }
         });
     });
     // Магнифик попап для для увеличении фото в галереии
@@ -134,8 +166,6 @@ $(document).ready(() => {
             duration: 200
         }
     });
-    // паралакс ефект фото
-    $('.parallax-window').parallax({imageSrc: '../images/paralaxBigImage.jpg'});
 
     $('#burger').click(() => {
         $('#header-container').toggleClass('menu-open');
@@ -143,5 +173,10 @@ $(document).ready(() => {
     $('#header-container #links a, #links svg').click(() => {
         $('#header-container').removeClass('menu-open');
     });
+
+    $('#date').datetimepicker({
+        format: 'd.m.Y H:i',
+    });
+
 
 });

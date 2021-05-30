@@ -10,22 +10,22 @@
 
 @font-face {
     font-family: 'Nunito-Bold';
-    src: url("../fonts/Nunito-Bold.ttf");
+    src: url("../fonts/nunito.bold.ttf");
 }
 
 @font-face {
     font-family: 'Nunito-ExtraBold';
-    src: url("../fonts/Nunito-ExtraBold.ttf");
+    src: url("../fonts/nunito.extrabold.ttf");
 }
 
 @font-face {
     font-family: 'Nunito-Regular';
-    src: url("../fonts/Nunito-Regular.ttf");
+    src: url("../fonts/nunito.regular.ttf");
 }
 
 @font-face {
     font-family: 'Nunito-SemiBold';
-    src: url("../fonts/Nunito-SemiBold.ttf");
+    src: url("../fonts/nunito.semibold.ttf");
 }
 
 body {
@@ -47,16 +47,19 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 7px 0;
     align-items: center;
+    justify-content: space-between;
 }
+
 #burger {
     font-size: 30px;
     color: #2c0526;
     display: none;
 }
+
 #links {
-    margin-right: 155px;
+    margin-right: 129px;
 }
 
 #links a {
@@ -64,7 +67,8 @@ body {
     font-size: 13px;
     font-family: "Nunito-Semi-Bold", sans-serif;
     color: rgb(44, 5, 38);
-    margin-right: 60px;
+    margin-right: 48px;
+    font-weight: bold;
 }
 
 #links a:last-child {
@@ -76,19 +80,21 @@ body {
     font-family: "Nunito-Extra-Bold", sans-serif;
     color: rgb(114, 17, 99);
     font-weight: bold;
-    border-bottom: 1px solid rgb(114, 17, 99);
-    padding-bottom: 3px;
+    border-bottom: 2px solid rgb(114, 17, 99);
+    padding-bottom: 4px;
 }
 
 #links a:hover {
-    border-bottom: 1px solid rgb(114, 17, 99);
+    border-bottom: 2px solid rgb(114, 17, 99);
     padding-bottom: 3px;
 }
 
 .logo-head-text {
-    font-size: 55px;
+    font-size: 56px;
     font-family: "Marguaritas", sans-serif;
     color: rgb(67, 6, 57);
+    line-height: 1;
+
 }
 
 .logo .logo-text {
@@ -96,6 +102,9 @@ body {
     font-family: "Nunito-SemiBold", sans-serif;
     text-align: center;
     color: rgb(67, 6, 57);
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
 .number {
@@ -112,7 +121,7 @@ body {
 }
 
 #titles {
-    width: 524px;
+    width: 527px;
     margin-top: 175px;
 }
 
@@ -121,30 +130,32 @@ body {
     font-family: "Nunito-Bold", sans-serif;
     color: rgb(67, 6, 57);
     margin: 0 auto;
+    font-weight: bold;
 }
 
-#title-container #titles h1 span {
-    font-size: 55px;
+#title-container #titles .logo-head-text {
+    font-size: 70px;
     font-family: "Marguaritas", sans-serif;
     color: rgb(67, 6, 57);
+    font-weight: 100;
 }
 
 #title-container #titles-text {
     font-size: 20px;
     font-family: "Nunito-Regular", sans-serif;
     color: rgb(44, 5, 38);
-    line-height: 1.25;
-    width: 430px;
+    line-height: 1.2;
+    width: 462px;
     margin-top: 35px;
 }
 
 #action {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 #action a {
     text-decoration: none;
-    padding: 18px 35px 19px 35px;
+    padding: 13px 36px 13px 36px;
 }
 
 .btn {
@@ -161,54 +172,54 @@ body {
 #info {
     position: relative;
     padding-bottom: 114px;
+    overflow: hidden;
 }
 
 #info #petal-1 {
     position: absolute;
-    top: -20px;
-    left: 53px;
+    left: calc(50% + -884px);
 }
 
 #info #petal-2 {
     position: absolute;
     top: 162px;
-    left: 0;
+    left: calc(50% - 963px);
 }
 
 #info #petal-3 img {
     position: absolute;
-    top: 665px;
-    left: -85px;
+    top: 618px;
+    left: calc(50% - 1034px);
 }
 
 #info #petal-4 img {
     position: absolute;
     bottom: 79px;
-    left: 236px;
+    left: calc(50% - 724px);
 }
 
 #info #petal-5 img {
     position: absolute;
     top: 60px;
-    right: 423px;
+    right: calc(50% - 558px);
 }
 
 #info #petal-6 img {
     position: absolute;
-    top: 272px;
-    right: 0;
+    top: 273px;
+    right: calc(50% - 869px);
 }
 
 #info #petal-7 img {
     position: absolute;
-    top: 599px;
-    right: 226px;
+    top: 585px;
+    right: calc(50% - 701px);
 }
 
 #info #lavanda img {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: calc(50% - 915px);
     z-index: -3;
 }
 
@@ -235,21 +246,32 @@ body {
 
 .info-spa {
     display: flex;
-    margin-left: 150px;
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 .info-spa:first-child {
     margin-left: 0;
+    margin-right: 140px;
+
+}
+
+.info-spa:nth-child(3) {
+    margin-left: 94px;
+}
+
+.info-spa:last-child {
+    margin-left: 178px;
 }
 
 .info-spa-text {
-    width: 280px;
+    width: 288px;
     margin-left: 30px;
     font-size: 14px;
     font-family: "Nunito-Regular", sans-serif;
     color: rgb(44, 5, 38);
     line-height: 1.2;
+    display: flex;
+    align-items: center;
 }
 
 #rituals-spa .title-info {
@@ -257,14 +279,18 @@ body {
     margin-top: 190px;
 }
 
+#rituals-spa-description .spa-images img {
+    max-width: 100%;
+}
+
 #rituals-spa .rituals-spa-text {
-    width: 550px;
+    width: 570px;
     font-size: 16px;
     font-family: "Nunito-Regular", sans-serif;
     color: rgb(44, 5, 38);
     line-height: 1.313;
-    margin-top: 35px;
-    margin-bottom: 75px;
+    margin-top: 31px;
+    margin-bottom: 45px;
 }
 
 .spa-description {
@@ -288,6 +314,7 @@ body {
     font-size: 16px;
     font-family: "Nunito-Bold", sans-serif;
     color: rgb(44, 5, 38);
+    font-weight: bold;
 }
 
 #rituals-spa .spa .spa-text {
@@ -295,7 +322,7 @@ body {
     font-family: "Nunito-Regular", sans-serif;
     color: rgb(44, 5, 38);
     margin-top: 17px;
-    height: 90px;
+    height: 100px;
 }
 
 #rituals-spa .spa .spa-time {
@@ -303,6 +330,7 @@ body {
     font-size: 12px;
     font-family: "Nunito-SemiBold", sans-serif;
     color: rgb(114, 17, 99);
+    font-weight: bold;
 }
 
 #rituals-spa .spa .spa-money {
@@ -313,10 +341,17 @@ body {
 }
 
 #rituals-spa .spa .btn {
-    margin-top: 18px;
-    padding: 12px 24px;
+    padding: 7px 24px;
     margin-left: 11px;
 
+}
+
+#rituals-spa .spa-action {
+    margin-top: 17px;
+}
+
+.btn:hover {
+    color: white;
 }
 
 #present {
@@ -324,6 +359,8 @@ body {
     background-position: center;
     height: 558px;
     position: relative;
+    overflow: hidden;
+
 }
 
 #present-container {
@@ -334,13 +371,13 @@ body {
 #present #petal-8 img {
     position: absolute;
     top: 95px;
-    left: 91px;
+    left: calc(50% - 878px);
 }
 
 #present #petal-9 img {
     position: absolute;
-    bottom: 56px;
-    left: 0;
+    bottom: 104px;
+    left: calc(50% - 970px);
 }
 
 #present .title-info {
@@ -358,7 +395,7 @@ body {
 
 #present button {
     margin-top: 30px;
-    padding: 17px 42px;
+    padding: 13px 36px 13px 36px;
     font-family: "MyriadRegular", sans-serif;
 }
 
@@ -368,61 +405,64 @@ body {
 
 #petal-container #petal-10 img {
     position: absolute;
-    right: 554px;
+    right: calc(50% - 406px);
     top: -6px;
 }
 
 #petal-container #petal-11 img {
     position: absolute;
-    right: 519px;
+    right: calc(50% - 448px);
     top: 10px;
 }
 
 #petal-container #petal-12 img {
     position: absolute;
-    right: 282px;
+    right: calc(50% - 589px);
     top: 180px;
 }
 
 #petal-container #petal-13 img {
     position: absolute;
-    right: 233px;
+    right: calc(50% - 719px);
     top: 391px;
 }
 
 #petal-container #petal-14 img {
     position: absolute;
-    right: 326px;
-    top: 624px;
+    right: calc(50% - 645px);
+    top: 598px;
 }
 
 #petal-container #petal-15 img {
     position: absolute;
-    right: 146px;
+    right: calc(50% - 789px);
     top: 681px;
 }
 
 #petal-container #petal-16 img {
     position: absolute;
-    right: 0;
+    right: calc(50% - 874px);
     top: 854px;
 }
 
 #petal-container #petal-17 img {
     position: absolute;
-    right: 546px;
+    right: calc(50% - 467px);
     top: 1331px;
 }
 
 #petal-container #petal-18 img {
     position: absolute;
-    left: 210px;
+    left: calc(50% - 755px);
     top: 1331px;
 }
 
+#masters {
+    overflow: hidden;
+}
 
 #masters-container {
-    max-width: 1199px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -440,16 +480,9 @@ body {
 }
 
 #the-choice-masters {
-    display: flex;
-    justify-content: space-between;
     margin-top: 46px;
-    flex-wrap: wrap;
 }
 
-#the-choice-masters .master {
-    position: relative;
-    width: 385px;
-}
 
 #the-choice-masters .master img {
     border-radius: 10px;
@@ -457,7 +490,7 @@ body {
 
 #the-choice-masters .master-content {
     background: rgba(240, 238, 237, 0.8);
-    width: 226px;
+    width: 252px;
     padding: 10px 15px;
     position: absolute;
     bottom: 17px;
@@ -467,6 +500,7 @@ body {
     font-size: 18px;
     font-family: "Nunito-Bold", sans-serif;
     color: rgb(44, 5, 38);
+    font-weight: bold;
 }
 
 #the-choice-masters .master-content .master-work {
@@ -486,14 +520,14 @@ body {
 }
 
 #the-choice-masters .slick-prev {
-    left: 554px;
-    top: 330px;
+    left: calc(50% - 44px);
+    top: 331px;
     z-index: 99;
 }
 
 #the-choice-masters .slick-next {
-    right: 554px;
-    top: 330px;
+    right: calc(50% - 44px);
+    top: 331px;
     z-index: 99;
 }
 
@@ -501,16 +535,29 @@ body {
     content: '1';
     font-size: 18px;
     font-family: "Nunito-Regular", sans-serif;
-    color: rgba(114, 17, 99, 0.702);
+    color: #721163;
     line-height: 1.2;
+
+}
+
+.slick-dots li button:before {
+    opacity: 0.6;
 }
 
 #the-choice-masters .slick-dots li #slick-slide-control01:before {
     content: '2';
     font-size: 18px;
     font-family: "Nunito-Regular", sans-serif;
-    color: rgba(114, 17, 99, 0.702);
+    color: #721163;
     line-height: 1.2;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+}
+
+#the-choice-masters .slick-dots li {
+    margin: 0;
 }
 
 #the-choice-masters .slick-dots li button:nth-child(1) {
@@ -530,7 +577,8 @@ body {
     font-size: 30px;
     font-family: "Nunito-Bold", sans-serif;
     color: rgb(67, 6, 57);
-    margin-top: 200px;
+    margin-top: 150px;
+    font-weight: bold;
 }
 
 #gallery-text {
@@ -539,7 +587,7 @@ body {
     color: rgb(44, 5, 38);
     line-height: 1.313;
     margin-top: 31px;
-    width: 665px;
+    width: 700px;
 }
 
 #gallery-photo {
@@ -589,14 +637,18 @@ body {
 }
 
 #gallery-photo .slick-prev {
-    left: 427px;
-    top: 355px;
+    left: calc(50% - 155px);
+    top: 354px;
     z-index: 9999;
 }
 
+#gallery-photo .slick-dots li {
+    margin: 0 3px;
+}
+
 #gallery-photo .slick-next {
-    right: 427px;
-    top: 355px;
+    right: calc(50% - 155px);
+    top: 354px;
     z-index: 9999;
 }
 
@@ -607,28 +659,29 @@ body {
 #question {
     background: url("../images/bg-question.png");
     background-position: center;
-    height: 850px;
+    height: 823px;
     position: relative;
+    overflow: hidden;
 }
 
 
 #question #petal-19 img {
     position: absolute;
-    top: 438px;
-    right: 395px;
+    top: 383px;
+    right: calc(50% - 542px);
 }
 
 #question #petal-20 img {
     position: absolute;
-    top: 144px;
-    left: 151px;
+    top: 177px;
+    left: calc(50% - 793px);
     z-index: 0;
 }
 
 #question #petal-21 img {
     position: absolute;
     top: 513px;
-    left: 62px;
+    left: calc(50% - 904px);
     z-index: 0;
 }
 
@@ -651,8 +704,8 @@ body {
 .accordion .accordion-header {
     font-size: 18px;
     font-family: "Nunito-SemiBold", sans-serif;
-    color: rgb(44, 5, 38);
-
+    color: #2c0526;
+    font-weight: bold;
 }
 
 .accordion .accordion-item {
@@ -666,7 +719,7 @@ body {
 .accordion .ui-widget-content {
     font-size: 14px;
     font-family: "Nunito-Regular", sans-serif;
-    color: rgb(44, 5, 38);
+    color: #2c0526;
     line-height: 16px;
     margin: 0;
     border: none;
@@ -684,7 +737,7 @@ body {
 .accordion .accordion-header {
     font-size: 18px;
     font-family: "Nunito-SemiBold", sans-serif;
-    color: rgb(44, 5, 38);
+    color: #2c0526;
     padding: 0;
 }
 
@@ -715,7 +768,7 @@ body {
     content: '';
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 3px;
     display: inline-block;
     width: 20px;
     height: 13px;
@@ -745,7 +798,7 @@ body {
     color: rgb(44, 5, 38);
     line-height: 1.167;
     text-align: center;
-    width: 382px;
+    width: 397px;
     margin: 0 auto;
 }
 
@@ -756,7 +809,8 @@ body {
 
 .input {
     margin-top: 30px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 15px;
 }
 
@@ -767,7 +821,7 @@ body {
     border-style: solid;
     background-color: rgb(245, 239, 243);
     width: 280px;
-    padding: 17px 21px;
+    padding: 13px 36px 13px 20px;
     outline: 0;
     font-size: 14px;
     font-family: "Nunito-Bold", sans-serif;
@@ -781,32 +835,35 @@ body {
 }
 
 #number-container .btn {
-    padding: 16px 82px;
+    padding: 12px 87px;
     margin: auto;
     display: flex;
 }
 
 #contact-container {
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#contact-container #petal-22 img {
+#question #petal-22 img {
     position: absolute;
-    top: -104px;
-    right: 0;
+    bottom: calc(50% - 414px);
+    right: calc(50% - 563px);
+    width: 68px;
+    height: 60px;
 }
 
 #contact-container #petal-23 img {
     position: absolute;
     top: 186px;
-    right: -169px;
+    right: calc(50% - 774px);
 }
 
 #contact-container #petal-24 img {
     position: absolute;
     top: 357px;
-    right: -120px;
-    overflow: hidden;
+    right: calc(50% - 721px);
 }
 
 #maps-information {
@@ -817,29 +874,32 @@ body {
 
 #lavender img {
     position: absolute;
-    top: 367px;
+    top: 258px;
     z-index: -1;
-    left: -179px;
+    left: calc(50% - 788px);
 }
 
 #maps #title-maps {
     font-size: 36px;
     font-family: "Nunito-Bold", sans-serif;
     color: rgb(67, 6, 57);
-    margin-top: 108px;
+    margin-top: 24px;
+    line-height: 29px;
+    font-weight: bold;
 }
 
 #maps {
-    max-width: 1200px;
-    margin: 0 auto;
+    overflow: hidden;
 }
 
 #maps .title-location {
     font-size: 20px;
     font-family: "Nunito-SemiBold", sans-serif;
     color: rgb(44, 5, 38);
-    margin-top: 58px;
+    margin-top: 54px;
     margin-bottom: 15px;
+    line-height: 1;
+    font-weight: bold;
 }
 
 .work {
@@ -849,10 +909,11 @@ body {
 
 #maps .location p, .work .text-work {
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 16px;
     font-family: "Nunito-Regular", sans-serif;
     color: rgb(44, 5, 38);
+    line-height: 1;
 }
 
 #maps .work .title-location {
@@ -860,32 +921,37 @@ body {
 }
 
 #maps .work .last {
-    margin-top: 40px;
+    margin-top: 41px;
 }
 
 #footer {
     background-color: rgb(250, 247, 250);
 }
+
 #footer #colum {
     display: flex;
+    margin-left: 94px;
 }
 
 #footer #colum .number {
     margin-left: 100px;
 }
+
 #footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     padding: 27px 0 27px 0;
-    justify-content: space-between;
 }
 
 #footer #footer-icon .link {
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 26px;
+}
 
+#footer #footer-icon .link:last-child {
+    margin-right: 0;
 }
 
 #footer #footer-icon .link svg {
@@ -894,12 +960,27 @@ body {
     height: 24px;
 }
 
+#footer #footer-icon .link:first-child svg {
+    width: 46px;
+    height: 39px;
+}
+
+#footer #footer-icon .link:last-child svg {
+    width: 34px;
+    height: 39px;
+
+}
+
 #footer #footer-icon .link svg:hover {
     fill: #721163;
 }
 
 #footer .logo {
     margin-left: 310px;
+}
+
+#footer .logo .logo-head-text {
+    font-size: 62px;
 }
 
 #footer .text-work {
@@ -928,8 +1009,7 @@ body {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #665d62;
-    opacity: 0.902;
+    background-color: rgba(102, 93, 98, 0.8);
     z-index: 9999;
     justify-content: center;
     align-items: center;
@@ -952,6 +1032,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 #reservation .reserve-input input, .reserve-input select {
@@ -968,15 +1049,19 @@ body {
     line-height: 1.5;
 
 }
+
 #reservation .reserve-input input:focus-visible {
     outline: none;
 }
+
 #reservation .reserve-input {
     margin-top: 25px;
 }
+
 #reservation .reserve-input:first-child {
     margin-top: 0;
 }
+
 #reservation .reserve-input .input-error {
     display: none;
     font-size: 14px;
@@ -984,6 +1069,11 @@ body {
     color: #8e0404;
     margin-left: 14px;
 }
+
+.cancel {
+    padding: 15px;
+}
+
 #reservation-content {
     margin: 0 auto;
     display: flex;
@@ -993,6 +1083,7 @@ body {
     /*display: none;*/
     padding: 60px 64px;
 }
+
 .form-control:focus {
     background-color: rgb(250, 247, 250);
     border-color: rgb(114, 17, 99);
@@ -1001,13 +1092,16 @@ body {
     font-family: "Nunito-Regular", sans-serif;
     box-shadow: none;
 }
+
 #reservation #action-popup {
     margin-top: 60px;
 }
+
 #reservation #action-popup .btn {
     margin-top: 0;
     padding: 16px 57px;
 }
+
 #reservation #reservation-send {
     /*display: flex;*/
     display: none;
@@ -1016,7 +1110,8 @@ body {
     align-items: center;
     text-align: center;
 }
-#reservation #reservation-send{
+
+#reservation #reservation-send {
     margin: 135px 130px 195px 130px;
 }
 
@@ -1026,6 +1121,7 @@ body {
     color: rgb(114, 17, 99);
     font-weight: bold;
 }
+
 #reservation #reservation-send .reservation-send-text {
     font-size: 18px;
     font-family: "Nunito-Regular", sans-serif;
@@ -1034,40 +1130,71 @@ body {
     margin-top: 27px;
     width: 294px;
 }
-.btn-check:focus+.btn, .btn:focus {
+
+.btn-check:focus + .btn, .btn:focus {
     box-shadow: none;
-}
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
 }
 
 #answer {
     text-align: center;
-  display: none;
+    display: none;
     flex-direction: column;
     padding: 60px 30px;
 }
+
 #answer .answer-title {
     font-size: 20px;
     font-family: "Nunito-Bold", sans-serif;
     color: #721163;
 }
+
 #answer .answer-text {
     font-size: 15px;
     margin-top: 10px;
     font-family: Nunito-Regular, sans-serif;
     color: #2c0526;
 }
+
 .input-error-phone {
     display: none;
     font-size: 12px;
     font-family: "Nunito-Bold", sans-serif;
     color: darkred;
 }
-#links svg  {
-    width: 20px;
-    height: 20px;
+
+#links svg {
+    width: 30px;
+    height: 30px;
     fill: #721163;
     display: none;
+}
+
+.xdsoft_datetimepicker, .xdsoft_datetimepicker .xdsoft_label, .xdsoft_datetimepicker .xdsoft_label {
+    background: #f3d2ed;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+    background: #721163;
+    box-shadow: #0a0a0a 0 1px 3px 0 inset;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
+    color: black;
+    font-weight: bold;
+}
+
+.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
+    background: #2c0526;
+}
+
+body .xdsoft_datetimepicker .xdsoft_calendar td:hover .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+    background-color: #2c0526 !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td:hover, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+    background-color: #2c0526 !important;
+}
+.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
+    box-shadow: #2c0526 0 1px 3px 0 inset;
+    background: #721163;
 }

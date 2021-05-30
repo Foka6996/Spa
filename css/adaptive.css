@@ -3,98 +3,68 @@
         background-size: 100%;
         background-position: bottom center;
     }
+
     #question {
         background-size: 100%;
         background-position: bottom center;
+        height: 880px;
     }
 }
-
-/*1819-1843*/
-@media screen and (max-width: 1843px) {
-    #info #petal-4 img {
-        bottom: 29px;
-        left: 281px;
+/*1226-1269*/
+@media screen and (max-width: 1269px) {
+    #gallery-photo .slick-track .slick-slide, .slick-cloned {
+        width: 420px;
     }
 }
-
-/*1723-1820*/
-@media screen and (max-width: 1820px) {
-    #petal-container #petal-13 img {
-        display: none;
-    }
-}
-
-/*1689-1724*/
-@media screen and (max-width: 1724px) {
-    #info #petal-5 img {
-        top: 2px;
-        right: 98px;
-    }
-}
-
-/*1509-1690*/
-@media screen and (max-width: 1690px) {
-    #petal-container #petal-17 img {
-        top: 1414px;
-    }
-
-    #question #petal-20 img {
-        display: none;
-    }
-}
-
-/*1399-1510*/
-@media screen and (max-width: 1510px) {
-    #info #petal-3 img {
-        display: none;
-    }
-
-    #question #petal-21 img {
-        display: none;
-    }
-
-    #contact-container #petal-23 img {
-        right: -121px;
-    }
-}
-
-/*1399-1446*/
-@media screen and (max-width: 1446px) {
-    #contact-container #petal-23 img {
-        display: none;
-    }
-
-    #contact-container #petal-24 img {
-        display: none;
-    }
-}
-
-/*1328-1400*/
-@media screen and (max-width: 1400px) {
-    #contact-container #petal-24 img {
-        display: none;
-    }
-
-    #contact-container #petal-23 img {
-        display: none;
-    }
-
-    #petal-container #petal-16 img {
-        display: none;
-    }
-}
-
-/*1200-1327*/
-@media screen and (max-width: 1327px) {
-    #info #petal-2 img {
-        display: none;
-    }
-
-}
-
+/*1200-1225*/
 @media screen and (max-width: 1225px) {
     #question-container {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #header-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #title-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #info-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #present-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #masters-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #gallery {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #contact-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #number-container .number-text {
+        font-size: 15px;
+        width: 318px;
+    }
+    #footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #number-container {
@@ -107,43 +77,194 @@
     }
 }
 
+/*768-1023*/
+@media screen and (max-width: 1023px) {
+
+    #information .info-spa-text {
+        margin-left: 20px;
+        width: 206px;
+    }
+
+    #information .info-spa-image {
+        width: 90px;
+    }
+
+    #present {
+        backdrop-filter: blur(3px);
+    }
+
+    #information .info-spa-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #rituals-spa-description {
+        justify-content: center;
+    }
+
+    #present .title-info {
+        font-size: 25px;
+    }
+
+    #present .present-text {
+        font-size: 16px;
+        width: 306px;
+    }
+
+    #question .title-info {
+        padding-top: 101px;
+    }
+
+    #number-container {
+        margin-top: 7px;
+    }
+
+    #question-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #question {
+        height: 1267px;
+        background-size: auto 100%;
+    }
+
+    #maps #title-maps {
+        text-align: center;
+    }
+
+    #footer #footer-container {
+        justify-content: space-between;
+    }
+
+    #footer .text-work {
+        margin-left: 0;
+    }
+
+    #footer .number {
+        margin-left: 0;
+    }
+
+    #gallery-title {
+        text-align: center;
+        margin-bottom: 31px;
+    }
+
+    #gallery-text {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #footer .logo {
+        margin-left: 0;
+    }
+
+    #footer #colum {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    #footer #colum .number {
+        margin-top: 3px;
+    }
+
+}
+
 /*1163-1199*/
 @media screen and (max-width: 1199px) {
     #header-container {
         padding: 10px 20px;
     }
 
+    #masters #masters-container #the-choice-masters .slick-slide, .slick-current, .slick-active {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #masters .title-info {
+        text-align: center;
+        padding-bottom: 35px;
+    }
+
+    #masters .text-info-masters {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #the-choice-masters .slick-dots li #slick-slide-control02:before {
+        content: '3';
+        font-size: 18px;
+        font-family: "Nunito-Regular", sans-serif;
+        color: #721163;
+        line-height: 1.2;
+    }
+
+    #the-choice-masters .slick-prev {
+        left: calc(50% - 50px);
+        top: 330px;
+        z-index: 99;
+    }
+
+    #the-choice-masters .slick-next {
+        right: calc(50% - 50px);
+        top: 330px;
+        z-index: 99;
+    }
+
     #header-container .number {
         margin-left: 332px;
     }
 
-    #info #information .info-spa {
-        margin-left: 100px;
+    #contact-container #location-work {
+        display: flex;
+        justify-content: center;
     }
 
-    #info #information .info-spa:first-child {
-        margin-left: 0;
-    }
-
-    #rituals-spa .spa .spa-images {
-        width: 250px;
-    }
-
-    #rituals-spa .spa .spa-images img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    #rituals-spa .spa {
-        width: 250px;
+    #maps #title-maps {
+        text-align: center;
     }
 
     #title-container {
         padding: 0 20px;
     }
 
+    #information {
+        justify-content: space-evenly;
+    }
+
+    #maps .work .title-location {
+        margin-top: 52px;
+    }
+
+    #information .info-spa, .info-spa:nth-child(2), .info-spa:nth-child(3) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #maps #location-work .work .last {
+        margin-top: 7px;
+    }
+
+    #maps #location-work .work {
+        margin-bottom: 100px;
+    }
+
+    #maps-information {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    #info-container .title-info {
+        text-align: center;
+    }
+
     #info {
-        padding: 0 20px 114px 20px;
+        padding-bottom: 70px;
     }
 
     #present-container {
@@ -154,15 +275,6 @@
         padding: 0 20px;
     }
 
-    #the-choice-masters .slick-next {
-        right: 517px;
-        top: 278px;
-    }
-
-    #the-choice-masters .slick-prev {
-        top: 278px;
-        left: 517px;
-    }
 
     #gallery {
         padding: 0 20px;
@@ -177,22 +289,12 @@
         width: 389px;
     }
 
-    #question #petal-19 img {
-        display: none;
-    }
-
     #links {
         margin-right: 137px;
     }
 
-    #gallery-photo .slick-prev {
-        left: 393px;
-        top: 354px;
-    }
-
-    #gallery-photo .slick-next {
-        right: 393px;
-        top: 354px;
+    #rituals-spa-description {
+        justify-content: center;
     }
 
     #number-container {
@@ -200,17 +302,15 @@
         width: 419px;
     }
 
-    #the-choice-masters .master {
-        max-width: 320px
-    }
-
-    #the-choice-masters .master img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    #the-choice-masters .slick-list {
+    #rituals-spa .rituals-spa-text {
+        margin: 0 auto;
+        padding-top: 31px;
+        padding-bottom: 20px;
         text-align: center;
+    }
+
+    #rituals-spa .spa {
+        margin: 25px 54px;
     }
 
     #contact-container {
@@ -236,10 +336,6 @@
 
 /*1024-1162*/
 @media screen and (max-width: 1162px) {
-    #info #petal-6 img {
-        display: none;
-    }
-
     .accordion {
         width: 598px;
     }
@@ -249,33 +345,9 @@
         width: 368px;
     }
 
-    #number-container .number-text {
-        font-size: 15px;
-        width: 318px;
-    }
 
-    #maps-information {
-        position: static;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-
-    #contact-container #location-work {
-        display: flex;
-        justify-content: center;
-    }
-
-    #maps #location-work .work .title-location {
-        margin-top: 57px;
-    }
-
-    #maps #location-work .work {
-        margin-bottom: 100px;
-    }
-
-    #maps #location-work .work .last {
-        margin-top: 23px;
+    #footer #colum {
+        margin-left: 0;
     }
 
     #footer .text-work {
@@ -288,16 +360,6 @@
 
     #footer .logo {
         margin-left: 165px;
-    }
-
-    #gallery-photo .slick-prev {
-        left: 321px;
-        top: 331px;
-    }
-
-    #gallery-photo .slick-next {
-        right: 322px;
-        top: 331px;
     }
 
     #gallery-photo {
@@ -316,233 +378,75 @@
         justify-content: space-between;
     }
 
-    #info #information .info-spa {
-        margin-left: 66px;
-    }
-
     #rituals-spa .title-info {
         margin-top: 100px;
     }
 
-    #rituals-spa .spa {
-        width: 238px;
-    }
-
-    #rituals-spa .spa .spa-images {
-        width: 238px;
-    }
-
-    #rituals-spa .spa .spa-images img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    #rituals-spa .spa .spa-title {
-        font-size: 15px;
-    }
-
-    #rituals-spa .spa .spa-time {
-        margin-top: 63px;
-    }
 
     #rituals-spa .rituals-spa-text {
         margin-bottom: 0;
     }
 
-    #rituals-spa-description {
-        margin-top: 30px;
-    }
-
-    #the-choice-masters .slick-next {
-        right: 445px;
-
-    }
-
-    #the-choice-masters .slick-prev {
-        left: 446px;
-
-    }
-
-    #gallery-photo .img {
-        width: 300px;
-    }
-
-    #gallery-photo .img img {
-        max-height: 100%;
-        max-width: 100%;
-    }
-
-    #gallery-photo .slick-dots {
-        bottom: -15px;
-    }
-
-    #links a {
-        margin-right: 24px;
-    }
-
-    #the-choice-masters .master-content .master-name {
-        font-size: 15px;
-    }
-
     #footer #colum {
         display: flex;
     }
 
     #footer #footer-container {
-        padding: 0 20px 20px 20px;
+        padding: 20px;
+        justify-content: space-between;
     }
+
     #footer #footer-container #colum .number {
         margin-left: 65px;
     }
 
 }
-
-/*768-1023*/
-@media screen and (max-width: 1023px) {
-    #information .info-spa .info-spa-image {
-        width: 90px;
-    }
-
-    #information .info-spa .info-spa-image img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    #information .info-spa-text {
-        margin-left: 15px;
-    }
-
-    #information {
-        justify-content: center;
-    }
-
-    #info #information .info-spa {
-        margin-left: 20px;
-        width: 343px;
-    }
-
-    #rituals-spa-description {
-        justify-content: space-evenly;
-    }
-
+/*814-930*/
+@media screen and (max-width: 930px) {
     #rituals-spa .spa {
-        margin: 50px;
+        margin: 25px 8px;
     }
-
-    #present .title-info {
-        font-size: 25px;
-    }
-
-    #present .present-text {
-        font-size: 16px;
-        width: 306px;
-    }
-
-    #petal-container #petal-12 img {
-        right: 216px;
-        top: 72px;
+}
+/*768-813*/
+@media screen and (max-width: 813px) {
+    #the-choice-masters .slick-prev {
+        left: calc(50% - 83px);
+        top: 330px;
+        z-index: 99;
     }
 
     #the-choice-masters .slick-next {
-        right: 314px;
-        top: 203px;
+        right: calc(50% - 83px);
+        top: 330px;
+        z-index: 99;
     }
 
-    #the-choice-masters .slick-prev {
-        left: 314px;
-        top: 203px;
+    #the-choice-masters .slick-dots li #slick-slide-control03:before {
+        content: '4';
+        font-size: 18px;
+        font-family: "Nunito-Regular", sans-serif;
+        color: #721163;
+        line-height: 1.2;
     }
 
-    #petal-container #petal-15 img {
-        right: 113px;
-        top: 588px;
+    #the-choice-masters .slick-dots li #slick-slide-control04:before {
+        content: '5';
+        font-size: 18px;
+        font-family: "Nunito-Regular", sans-serif;
+        color: #721163;
+        line-height: 1.2;
     }
 
-    #the-choice-masters .master-content {
-        padding: 0;
-        width: 182px;
+    #the-choice-masters .slick-dots li #slick-slide-control05:before {
+        content: '6';
+        font-size: 18px;
+        font-family: "Nunito-Regular", sans-serif;
+        color: #721163;
+        line-height: 1.2;
     }
-
-    #the-choice-masters .master {
-        max-width: 225px;
-    }
-
-    #gallery-photo .slick-prev {
-        left: 195px;
-        top: 238px;
-    }
-
-    #gallery-photo .slick-next {
-        right: 195px;
-        top: 238px;
-    }
-
-    #gallery-photo .img-gallery {
-        max-width: 242px;
-    }
-
-    #gallery-photo .img {
-        max-height: 100%;
-        max-width: 100%;
-    }
-
-    #gallery-photo .slick-list {
-        height: 224px;
-    }
-
-    #gallery-photo .slick-dots {
-        bottom: -29px;;
-    }
-
-    #question-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #question {
-        height: 1200px;
-
-    }
-
-    #maps #title-maps {
-        text-align: center;
-    }
-
-    #lavender img {
-        top: 95px;
-    }
-
-    #footer #footer-container {
-        justify-content: space-between;
-    }
-
-    #footer .text-work {
-        margin-left: 0;
-    }
-
-    #footer .number {
-        margin-left: 0;
-    }
-
-    #footer .logo {
-        margin-left: 0;
-    }
-
-    #footer #colum {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-    }
-
-    #footer #colum .number {
-        margin-top: 3px;
-    }
-
 }
 
-/*580-767*/
+/*671-767*/
 @media screen and (max-width: 767px) {
     #main-header {
         height: 700px;
@@ -554,9 +458,49 @@
         margin-top: 20px;
     }
 
-    #info #lavanda img {
-        bottom: -3px;
-        right: 176px;
+    #burger {
+        display: block;
+    }
+
+    #links a.active {
+        font-size: 16px;
+    }
+
+    #links a {
+        margin: 0;
+        padding-top: 44px;
+        font-size: 16px;
+    }
+
+    #links {
+        top: 0;
+        left: 0;
+        position: fixed;
+        background: rgba(212, 188, 211, 0.9);
+        z-index: 99999;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 22px 0;
+        display: none;
+    }
+
+    #header .block-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #links svg {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    #header-container.menu-open #links {
+        display: block;
     }
 
 
@@ -569,84 +513,29 @@
     }
 
     #gallery-text {
-        width: 516px;;
+        width: 553px;
     }
 
-    #links {
-        display: flex;
-        flex-wrap: wrap;
-        width: 152px;
-    }
-
-    #links a {
-        margin-top: 16px;
-    }
 
     #titles {
         width: 392px;
         margin-top: 100px;
+        line-height: 4px;
+
     }
 
     #title-container #titles h1 {
         font-size: 27px;
     }
 
-    #info #petal-1 {
-        display: none;
-    }
-
-    #info #petal-5 img {
-        right: 0;
-    }
-
-    #info #information .info-spa {
-        margin-left: 0;
-    }
-
-    #info #information {
-        justify-content: center;
-    }
-
-    #info #information .info-spa:first-child {
-        margin-left: 174px;
-    }
-
-    #info #information .info-spa:nth-child(2) {
-        margin-right: 174px;
-    }
-
-    #info #information .info-spa:nth-child(3) {
-        margin-left: 174px;
-    }
-
-    #info #information .info-spa:last-child {
-        margin-right: 174px;
-    }
-
     #rituals-spa-description {
         justify-content: center;
-    }
-
-    #present button {
-        padding: 10px 16px;
-    }
-
-    #rituals-spa .spa {
-        margin: 15px;
-    }
-
-    #rituals-spa .spa .btn {
-        margin-left: 0;
-    }
-
-    .parallax-window {
-        min-height: 200px;
     }
 
     #present .title-info {
         margin: 0;
         font-size: 23px;
-        width: 274px;
+        width: 319px;
     }
 
     #present .present-text {
@@ -654,76 +543,13 @@
         width: 219px;
     }
 
-    #the-choice-masters .master {
-        max-width: 161px;
-    }
-
-    #the-choice-masters .master-content .master-name {
-        font-size: 10px;
-    }
-
-    #the-choice-masters .master-content {
-        width: 123px;
-    }
-
-    #the-choice-masters .master-content .master-work {
-        font-size: 9px;
-    }
-
-    #the-choice-masters .slick-next {
-        right: 223px;
-        top: 150px;
-    }
-
-    #the-choice-masters .slick-prev {
-        left: 223px;
-        top: 150px;
-    }
-
-    #petal-container #petal-15 img {
-        display: none;
-    }
-
     #gallery-title {
         margin-top: 100px;
     }
 
-    #petal-container #petal-14 img {
-        display: none;
-    }
-
-    #gallery-photo .img-gallery {
-        max-width: 140px;
-    }
-
-    #gallery-photo {
-        margin-bottom: 0;
-    }
-
-    #gallery-photo .slick-dots {
-        bottom: 50px;
-    }
-
-    #gallery-photo .slick-prev {
-        left: 99px;
-        top: 161px;
-    }
-
-    #gallery-photo .slick-next {
-        right: 99px;
-        top: 161px;
-    }
-
-    #maps #title-maps {
-        margin-top: 50px;
-    }
 
     #maps #location-work .work {
         margin-left: 30px;
-    }
-
-    #lavender img {
-        left: -215px;
     }
 
     #footer #colum {
@@ -736,65 +562,60 @@
 
 
 }
-
+/*630-670*/
+@media screen and (max-width: 670px) {
+    #reservation #reservation-send {
+        margin: 113px 37px;
+    }
+}
+/*580-628*/
 @media screen and (max-width: 628px) {
     #footer #colum {
         display: none;
     }
 
     #footer #footer-container {
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     #footer #footer-icon .link {
         margin-right: 25px;
     }
+
+    #maps #location-work .work {
+        margin: 0;
+    }
+
+    #contact-container #location-work {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #maps #location-work .work .title-location {
+        margin-top: 19px;
+    }
+
+    #maps #location-work .work {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 25px 0;
+    }
+
+    #maps .location {
+        margin-top: 40px;
+    }
+
+    #maps .title-location {
+        margin-top: 21px;
+    }
+
 }
 
-/*480-579*/
+/*371-579*/
 @media screen and (max-width: 579px) {
-    #burger {
-        display: block;
-    }
-
-    #links {
-        top: 117px;
-        left: 0;
-        position: fixed;
-        background: rgba(212, 188, 211, 0.8);
-        z-index: 3;
-        width: 100%;
-        text-align: center;
-        padding: 22px 0;
-        justify-content: center;
-        display: none;
-    }
-
-    #number-container .number-text {
-        font-size: 14px;
-        width: 297px;
-    }
-
-    #links svg {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-
-    #header-container.menu-open {
-        background: rgba(212, 188, 211, 0.8);
-    }
-
-    #header-container.menu-open #links {
-        display: block;
-    }
 
     #rituals-spa .rituals-spa-text {
-        width: 330px;
-    }
-
-    #masters .text-info-masters {
         width: 330px;
     }
 
@@ -802,68 +623,45 @@
         width: 424px;
     }
 
-    #info #lavanda img {
-        bottom: -3px;
-        right: 176px;
+    #rituals-spa .spa {
+        margin: 25px 0;
     }
 
-    #reservation .reserve-input input, .reserve-input select {
-        width: 179px;
-        padding: 10px 16px;
+    #number-container .number-text {
+        font-size: 14px;
+        width: 297px;
     }
 
     #question-container #number-container {
         width: 300px;
     }
 
-    #reservation-content {
-        padding: 36px 27px;
+    #present {
+        background-position: inherit;
     }
 
-    #reservation #reservation-cancel {
-        right: -42px;
-        width: 34px;
-        height: 34px;
+    #present .title-info {
+        font-size: 25px;
+        margin: 0 auto;
+        text-align: center;
     }
 
-    #reservation #reservation-send {
-        margin: 47px 17px;
+    #present .present-text {
+        font-size: 18px;
+        width: 361px;
+        margin: 0 auto;
+        padding-top: 23px;
+        text-align: center;
+        padding-bottom: 30px;
     }
 
-    #reservation #reservation-send .reservation-send-text {
-        width: 194px;
-    }
-
-    #reservation #action-popup {
-        margin-top: 30px;
-    }
-
-    #reservation #action-popup .btn {
-        padding: 10px 45px;
+    #present button {
+        margin: 0 auto;
+        display: block;
     }
 
     #gallery-text {
         width: 350px;
-    }
-
-    #info #information .info-spa:first-child {
-        margin-left: 100px;
-    }
-
-    #info #information .info-spa:nth-child(2) {
-        margin-right: 100px;
-    }
-
-    #info #information .info-spa:nth-child(3) {
-        margin-left: 100px;
-    }
-
-    #info #information .info-spa:last-child {
-        margin-right: 100px;
-    }
-
-    #info #petal-5 img {
-        display: none;
     }
 
     #rituals-spa-description {
@@ -879,73 +677,39 @@
         padding-top: 20px;
     }
 
-    #petal-container #petal-12 img {
-        right: 7px;
-        top: -8px;
-    }
-
     #masters .title-info {
         text-align: center;
     }
 
     #masters .text-info-masters {
-        width: 348px;
+        width: 447px;
         margin: 0 auto;
         text-align: center;
         padding-top: 20px;
     }
 
-    #the-choice-masters .master {
-        max-width: 140px;
-    }
-
-    #the-choice-masters .slick-next {
-        right: 176px;
-        top: 133px;
-    }
-
-    #the-choice-masters .slick-prev {
-        left: 176px;
-        top: 133px;
-    }
-
-    #gallery-photo .slick-prev {
-        left: 49px;
-        top: 160px
-    }
-
-    #gallery-photo .slick-next {
-        right: 49px;
-        top: 160px
-    }
-
-    #lavender img {
-        left: -284px;
-        top: 214px;
-    }
-
-    #maps .location p, .work .text-work {
-        font-size: 13px;
-    }
-
-    #maps .title-location {
-        font-size: 15px;
-    }
 
     #masters .title-info {
         padding-top: 85px;
     }
 
-    #info #lavanda img {
-        bottom: -3px;
-        right: 156px;
-    }
+
 }
 
-/*320-479*/
+/*371-479*/
 @media screen and (max-width: 479px) {
     .accordion .accordion-header {
         font-size: 12px;
+    }
+
+    #present .title-info {
+        font-size: 19px;
+        width: 282px;
+    }
+
+    #present .present-text {
+        font-size: 17px;
+        width: 288px;
     }
 
     .accordion .ui-accordion-header-icon {
@@ -957,26 +721,9 @@
         width: 308px;
     }
 
-    #links {
-        top: 87px;
-    }
-
-    #links svg {
-        top: 3px;
-        right: 3px;
-    }
-
-    .accordion .ui-widget-content {
-        font-size: 10px;
-    }
-
     #number-container .number-text {
         font-size: 13px;
         width: 253px;
-    }
-
-    #contact-container #petal-22 img {
-        display: none;
     }
 
     #titles {
@@ -999,8 +746,8 @@
 
     #title-container #titles h1 {
         font-size: 21px;
-        width: 288px;
-        line-height: 36px;
+        width: 303px;
+        line-height: 8px;
         margin: 0;
     }
 
@@ -1009,30 +756,9 @@
         font-size: 14px;
     }
 
-    #action a {
-        padding: 16px 25px 17px 25px;
-    }
-
-    #header-container .logo-head-text {
-        font-size: 36px;
-    }
-
-    #header-container .logo .logo-text {
-        font-size: 9px;
-    }
-
-    #header-container .number {
-        font-size: 11px;
-    }
-
     #info-container .title-info {
         text-align: center;
         font-size: 24px;
-    }
-
-    #info #info-container #information .info-spa {
-        margin-left: 0;
-        margin-right: 0;
     }
 
     #rituals-spa .title-info {
@@ -1045,13 +771,30 @@
         text-align: center;
     }
 
-    #masters .title-info {
-        font-size: 25px;
+    #the-choice-masters .master {
+        max-width: 300px;
+    }
+
+    #the-choice-masters .master img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #the-choice-masters .slick-prev {
+        left: -20px;
+        top: 106px;
+        z-index: 99;
     }
 
     #masters .text-info-masters {
-        font-size: 12px;
-        width: 289px;
+        width: 312px;
+        font-size: 15px;
+    }
+
+    #the-choice-masters .slick-next {
+        right: -20px;
+        top: 106px;
+        z-index: 99;
     }
 
     #gallery #gallery-title {
@@ -1060,17 +803,13 @@
     }
 
     #gallery #gallery-text {
-        font-size: 12px;
-        width: 289px;
+        font-size: 14px;
+        width: 291px;
         text-align: center;
     }
 
     #question-container .title-info {
         font-size: 20px;
-    }
-
-    #info #petal-4 img {
-        display: none;
     }
 
     #information .info-spa-text {
@@ -1079,101 +818,45 @@
         font-size: 13px;
     }
 
-    #info #petal-7 img {
-        top: 632px;
-        right: 226px;
+
+    #reservation-content {
+        padding: 36px 27px;
     }
 
-    .parallax-window {
-        display: none;
+    #reservation .reserve-input input, .reserve-input select {
+        width: 179px;
+        padding: 10px 16px;
     }
 
-    #the-choice-masters .master-content .master-work {
-        margin-top: 0;
+    #reservation #reservation-cancel {
+        right: -42px;
+        width: 34px;
+        height: 34px;
     }
 
-    #the-choice-masters .master-content {
-        width: 82px;
-        bottom: 0;
+    #reservation #reservation-send {
+        margin: 47px 17px;
     }
 
-    #the-choice-masters .master-content .master-name {
-        font-size: 7px;
+    #reservation #reservation-send .reservation-send-text {
+        width: 194px;
     }
 
-    #the-choice-masters .master-content .master-work {
-        font-size: 7px;
+    #reservation #action-popup .btn {
+        padding: 10px 45px;
     }
 
-    #the-choice-masters .slick-prev {
-        left: 94px;
-        top: 93px;
-    }
-
-    #the-choice-masters .slick-next {
-        right: 94px;
-        top: 93px;
-    }
-
-    #the-choice-masters .master {
-        max-width: 90px;
-    }
-
-    #gallery-photo .slick-dots li button::before {
-        width: 10px;
-        height: 10px;
-    }
-
-    #gallery #gallery-photo .slick-dots li {
-        width: 5px;
-        height: 5px;
-    }
-
-    #gallery-photo .slick-dots {
-        bottom: 100px;
-    }
-
-    #gallery-photo .slick-prev {
-        top: 112px;
-    }
-
-    #gallery-photo .slick-next {
-        top: 112px;
-        right: 45px;
-    }
-
-    #gallery-photo .img-gallery {
-        max-width: 87px;
+    #reservation #action-popup {
+        margin-top: 30px;
     }
 
     #question {
-        height: 1122px;
-    }
-
-    #maps #location-work .work {
-        margin: 0;
-    }
-
-    #contact-container #location-work {
-        flex-direction: column;
-    }
-
-    #maps #location-work .work .title-location {
-        margin-top: 19px;
-    }
-
-    #maps #location-work .work {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    #maps .title-location {
-        margin-top: 21px;
+        height: 1391px;
     }
 
     #footer #footer-container {
-        justify-content: space-between;
+        flex-direction: column-reverse;
+        padding-top: 20px;
     }
 
     #footer .logo-head-text {
@@ -1186,5 +869,44 @@
 
     #footer #footer-container #footer #footer-icon .icon .link {
         visibility: visible;
+    }
+
+    #gallery-photo .img-gallery {
+        max-width: 300px;
+    }
+
+    #gallery-photo .img-gallery a img {
+        max-width: 100%;
+        max-height: 100%
+    }
+
+    #gallery-photo .slick-track .slick-slide, .slick-cloned {
+        width: 290px;
+    }
+
+    #gallery-photo .slick-dots {
+        bottom: 25px;
+    }
+
+    #gallery-photo .slick-prev {
+        left: calc(50% - 155px);
+        top: 291px;
+        z-index: 9999;
+    }
+
+    #gallery-photo .slick-next {
+        right: calc(50% - 155px);
+        top: 291px;
+        z-index: 9999;
+    }
+
+    #footer #footer-icon {
+        margin-top: 23px;
+    }
+}
+/*320-370*/
+@media screen and (max-width: 370px) {
+    #header-container .number {
+        display: none;
     }
 }
