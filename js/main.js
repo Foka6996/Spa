@@ -7,7 +7,7 @@ $(document).ready(() => {
         slidesToScroll: 3,
         responsive: [
             {
-                breakpoint: 1199,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -33,10 +33,18 @@ $(document).ready(() => {
         dots: true,
         responsive: [
             {
-                breakpoint: 1269,
+                breakpoint: 2403,
                 settings: {
                     centerMode: true,
-                    slidesToShow: 2,
+                    slidesToShow: 3,
+                    variableWidth: true
+                }
+            },
+            {
+                breakpoint: 1172,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1,
                     variableWidth: true
                 }
             },
@@ -52,17 +60,9 @@ $(document).ready(() => {
     new WOW({
         animateClass: 'animate__animated '
     }).init();
-
-// актив класс в хедере
-
-    $('.category').click((e) => {
-        let currentElement = $(e.target);
-        $('.category').removeClass('active');
-        currentElement.addClass('active');
-    });
-
-    let error = false;
 // функция при клике на кнопку перезвонить
+    let error = false;
+
     $('.open-phone').click(() => {
         let phone = $('#phone');
         if (phone.val()) {
@@ -153,8 +153,8 @@ $(document).ready(() => {
                 $('#reservation-content').hide();
             },
             error: () => {
-                // $('#reservation-send').show();
-                // $('#reservation-content').hide();
+                $('#reservation-send').show();
+                $('#reservation-content').hide();
             }
         });
     });

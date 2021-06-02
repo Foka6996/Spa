@@ -10,22 +10,22 @@
 
 @font-face {
     font-family: 'Nunito-Bold';
-    src: url("../fonts/nunito.bold.ttf");
+    src: url("../fonts/Nunito-Bold.ttf");
 }
 
 @font-face {
     font-family: 'Nunito-ExtraBold';
-    src: url("../fonts/nunito.extrabold.ttf");
+    src: url("../fonts/Nunito-ExtraBold.ttf");
 }
 
 @font-face {
     font-family: 'Nunito-Regular';
-    src: url("../fonts/nunito.regular.ttf");
+    src: url("../fonts/Nunito-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Nunito-SemiBold';
-    src: url("../fonts/nunito.semibold.ttf");
+    src: url("../fonts/Nunito-SemiBold.ttf");
 }
 
 body {
@@ -59,34 +59,54 @@ body {
 }
 
 #links {
-    margin-right: 129px;
+    margin-right: 100px;
 }
 
-#links a {
+#links ul li a {
     text-decoration: none;
     font-size: 13px;
-    font-family: "Nunito-Semi-Bold", sans-serif;
+    font-family: "Nunito-SemiBold", sans-serif;
     color: rgb(44, 5, 38);
-    margin-right: 48px;
     font-weight: bold;
 }
 
-#links a:last-child {
+#links ul li:first-child {
+    margin-right: 37px;
+}
+
+#links ul li:nth-child(2) {
+    margin-right: 47px;
+}
+
+#links ul li:nth-child(3) {
+    margin-right: 44px;
+}
+
+#links ul li:last-child {
     margin-right: 0;
 }
 
-#links a.active {
-    font-size: 13px;
-    font-family: "Nunito-Extra-Bold", sans-serif;
-    color: #721163;
-    font-weight: bold;
-    border-bottom: 2px solid #721163;
-    padding-bottom: 4px;
+.block-link ul {
+    padding: 0;
+    margin: 0;
+}
+
+.block-link ul li {
+    list-style: none;
+    display: inline-block;
+    width: 54px;
+}
+
+.block-link ul li:nth-child(3) {
+    width: 95px;
 }
 
 #links a:hover {
-    border-bottom: 2px solid #721163;
-    padding-bottom: 4px;
+    font-size: 13px;
+    font-family: "Nunito-ExtraBold", sans-serif;
+    color: #721163;
+    font-weight: bold;
+    border-bottom: 1px solid #721163;
 }
 
 .logo-head-text {
@@ -121,13 +141,13 @@ body {
 }
 
 #titles {
-    width: 527px;
+    max-width: 509px;
     margin-top: 175px;
 }
 
 #title-container #titles h1 {
     font-size: 36px;
-    font-family: "Nunito-Bold", sans-serif;
+    font-family: "Nunito-Bold", serif;
     color: rgb(67, 6, 57);
     margin: 0 auto;
     font-weight: bold;
@@ -390,7 +410,7 @@ body {
     color: rgb(44, 5, 38);
     line-height: 1.167;
     width: 369px;
-    margin-top: 35px;
+    margin-top: 31px;
 }
 
 #present button {
@@ -429,7 +449,7 @@ body {
 
 #petal-container #petal-14 img {
     position: absolute;
-    right: calc(50% - 645px);
+    right: calc(50% - 663px);
     top: 598px;
 }
 
@@ -521,13 +541,13 @@ body {
 
 #the-choice-masters .slick-prev {
     left: calc(50% - 44px);
-    top: 331px;
+    top: 348px;
     z-index: 99;
 }
 
 #the-choice-masters .slick-next {
     right: calc(50% - 44px);
-    top: 331px;
+    top: 348px;
     z-index: 99;
 }
 
@@ -538,6 +558,14 @@ body {
     color: #721163;
     line-height: 1.2;
 
+}
+
+#the-choice-masters .slick-dots {
+    bottom: -43px;
+}
+
+#the-choice-masters {
+    margin-bottom: 40px;
 }
 
 .slick-dots li button:before {
@@ -552,14 +580,13 @@ body {
     line-height: 1.2;
 }
 
-.slick-dots li.slick-active button:before {
-    opacity: 1;
-}
 
 #the-choice-masters .slick-dots li {
     margin: 0;
 }
-
+#the-choice-masters .slick-dots li:first-child {
+    margin-right: 2px;
+}
 #the-choice-masters .slick-dots li button:nth-child(1) {
     content: '2';
 }
@@ -652,6 +679,12 @@ body {
     z-index: 9999;
 }
 
+#gallery-photo .slick-slide {
+    opacity: 0.5;
+}
+#gallery-photo .slick-slide.slick-active {
+    opacity: 1;
+}
 #gallery-photo .slick-dots {
     bottom: -38px;
 }
@@ -659,7 +692,7 @@ body {
 #question {
     background: url("../images/bg-question.png");
     background-position: center;
-    height: 823px;
+    height: 900px;
     position: relative;
     overflow: hidden;
 }
@@ -705,17 +738,19 @@ body {
     font-size: 18px;
     font-family: "Nunito-SemiBold", sans-serif;
     color: #2c0526;
-    font-weight: bold;
 }
 
 .accordion .accordion-item {
-    padding: 30px 30px 0 30px;
+    padding: 30px 46px 0 30px;
     box-sizing: border-box;
     border-radius: 8px;
     background-color: rgb(250, 247, 250);
     box-shadow: 0px 2px 9.2px 0.8px rgba(67, 6, 57, 0.12);
 }
-
+.ui-accordion .ui-accordion-header {
+    padding: 0;
+    margin: 0;
+}
 .accordion .ui-widget-content {
     font-size: 14px;
     font-family: "Nunito-Regular", sans-serif;
@@ -730,16 +765,10 @@ body {
 .accordion .ui-widget-content span {
     color: #721163;
     font-size: 14px;
-    font-family: Nunito-Bold, sans-serif;
+    font-family: "Nunito-Bold", sans-serif;
 }
 
 
-.accordion .accordion-header {
-    font-size: 18px;
-    font-family: "Nunito-SemiBold", sans-serif;
-    color: #2c0526;
-    padding: 0;
-}
 
 .accordion .accordion-item {
     border: 1px solid #ddd;
@@ -755,7 +784,7 @@ body {
 }
 
 .accordion .ui-accordion-content {
-    padding: 30px 76px 30px 0;
+    padding: 30px 0px 30px 0;
     border-top: 1px solid #721163;
 }
 
@@ -767,8 +796,8 @@ body {
 .accordion .ui-accordion-header-icon {
     content: '';
     position: absolute;
-    top: 10px;
-    right: 3px;
+    top: calc(50% - 21px);
+    right: -20px;
     display: inline-block;
     width: 20px;
     height: 13px;
@@ -1049,7 +1078,7 @@ body {
     font-family: "Nunito-Regular", sans-serif;
     color: rgb(44, 5, 38);
     line-height: 1.5;
-
+    cursor: pointer;
 }
 
 #reservation .reserve-input input:focus-visible {
@@ -1067,7 +1096,7 @@ body {
 #reservation .reserve-input .input-error {
     display: none;
     font-size: 14px;
-    font-family: Nunito-Bold, sans-serif;
+    font-family: "Nunito-Bold", sans-serif;
     color: #8e0404;
     margin-left: 14px;
 }
@@ -1153,7 +1182,7 @@ body {
 #answer .answer-text {
     font-size: 15px;
     margin-top: 10px;
-    font-family: Nunito-Regular, sans-serif;
+    font-family: "Nunito-Regular", sans-serif;
     color: #2c0526;
 }
 
@@ -1196,7 +1225,37 @@ body .xdsoft_datetimepicker .xdsoft_calendar td:hover .xdsoft_datetimepicker .xd
 .xdsoft_datetimepicker .xdsoft_calendar td:hover, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
     background-color: #2c0526 !important;
 }
+
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
     box-shadow: #2c0526 0 1px 3px 0 inset;
     background: #721163;
+}
+
+#the-choice-masters #slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03, #slick-slide04, #slick-slide05 {
+    width: 408px;
+}
+#gallery-photo .slick-slide {
+    width: 408px;
+}
+
+.arrow::after {
+    content: '\25BC';
+    position: absolute;
+    top: 225px;
+    right: 64px;
+    padding: 16px 1em;
+    border-radius: 0 22px 22px 0;
+    background: #721163;
+    cursor: pointer;
+    color: white;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+.arrow:hover::after {
+    color: #db6bd6;
+}
+.arrow::-ms-expand {
+    display: block;
 }
