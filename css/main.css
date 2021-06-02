@@ -362,12 +362,14 @@ body {
 
 #rituals-spa .spa .btn {
     padding: 7px 24px;
-    margin-left: 11px;
 
 }
 
 #rituals-spa .spa-action {
     margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .btn:hover {
